@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "LITHOS: Literature Retrieval and Source Validation for Scoping Reviews"
+abstract: "A command-line tool for retrieving candidate literature from OpenAlex, validating records against Crossref, and producing screening tables for scoping reviews. Designed for use by LLM agents and researchers."
+authors:
+  - family-names: Nissanka
+    given-names: Madeesh P.
+license: MIT
+repository-code: "https://github.com/madeesh-nissanka/lithos"
+version: 0.1.1
+date-released: 2026-10-09
+keywords:
+  - literature-review
+  - scoping-review
+  - openalex
+  - crossref
+  - bibliometrics
