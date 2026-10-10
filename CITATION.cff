@@ -6,6 +6,7 @@ abstract: "A command-line tool for retrieving candidate literature from OpenAlex
 authors:
   - family-names: Nissanka
     given-names: Madeesh P.
+    affiliation: "Université Laval"
 license: MIT
 repository-code: "https://github.com/madeesh-nissanka/lithos"
 version: 0.1.1
