@@ -1,5 +1,7 @@
 # LITHOS: Literature Retrieval and Source Validation for Scoping Reviews
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23274728.svg)](https://doi.org/10.5281/zenodo.23274728)
+
 LITHOS retrieves candidate literature from OpenAlex, validates records against Crossref, and produces screening tables for scoping reviews. It is designed for use by LLM agents and researchers who need a structured, auditable workflow.
 
 ## Abstract
