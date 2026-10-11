@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lithos"
+version = "0.2.0"
+description = "Literature Retrieval and Source Validation for Scoping Reviews"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{ name = "Madeesh P. Nissanka" }]
+requires-python = ">=3.10"
+dependencies = []
+optional-dependencies = {
+    "excel" = ["openpyxl>=3.1"],
+    "plots" = ["matplotlib>=3.8"],
+    "docx" = ["python-docx>=1.1"],
+    "yaml" = ["PyYAML>=6.0"],
+    "all" = ["openpyxl>=3.1", "matplotlib>=3.8", "python-docx>=1.1", "PyYAML>=6.0"],
+}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+[project.scripts]
+lithos = "lithos.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["lithos*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_functions = "test_*"
+addopts = "-v --tb=short"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I", "UP", "B", "C4", "ARG", "PTH", "T20", "SIM", "PL", "TRY"]
+ignore = ["S101", "T201", "T203", "ARG001", "ARG002"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true

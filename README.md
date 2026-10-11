@@ -1,114 +1,188 @@
-# LITHOS: Literature Retrieval and Source Validation for Scoping Reviews
-
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23274728.svg)](https://doi.org/10.5281/zenodo.23274728)
 
-LITHOS retrieves candidate literature from OpenAlex, validates records against Crossref, and produces screening tables for scoping reviews. It is designed for use by LLM agents and researchers who need a structured, auditable workflow.
+# LITHOS v0.2.0
 
-## Abstract
+**Literature Retrieval and Source Validation for Scoping Reviews**
 
-LITHOS automates the first stage of a scoping review: retrieving candidate records from a bibliographic database, deduplicating them, validating each record that has a DOI against the Crossref metadata registry, and emitting a screening table with a PRISMA-ScR style flow diagram. It does not generate citations; every record in the output traces to a real database entry.
+LITHOS is a dependency-light, open-source command line tool and Python library
+for systematic and scoping review literature retrieval. It searches multiple
+scholarly databases, deduplicates and validates records, supports screening
+workflows, and produces PRISMA-compliant reports. The core runs on the Python
+standard library alone.
 
-## Install
+## Features
 
-```bash
-# No dependencies beyond Python 3.10+ standard library
-git clone https://github.com/madeesh-nissanka/lithos.git
-cd lithos
-```
+- **Multi-source retrieval**: OpenAlex, Crossref, Semantic Scholar, arXiv,
+  Europe PMC, DOAJ, Unpaywall, and CORE (key required). Per-source rate limits,
+  retries, polite pool, and enable/disable flags.
+- **Query tooling**: Boolean query builder, synonym expansion, per-source query
+  translation, saved search profiles, and PRISMA-S style search logs.
+- **Citation chasing**: Forward and backward snowballing to a configurable depth
+  with deduplication at each level.
+- **Deduplication**: DOI matching, normalized-title matching, and fuzzy
+  title + year + first-author matching, with a merged-cluster report.
+- **Validation**: Crossref DOI check, retraction/correction flags,
+  preprint-to-published matching, predatory-venue detection, and metadata
+  completeness scoring.
+- **Screening**: Inclusion/exclusion rule files, keyword scoring, offline
+  TF-IDF ranking, two-reviewer export with disagreement tracking, and persisted
+  screen states.
+- **Outputs**: CSV, XLSX, JSON, RIS, BibTeX, CSL-JSON; PRISMA flow diagram
+  (SVG, optional PNG); evidence maps; search report (Markdown).
+- **Analytics**: Publication trends, top venues/authors, keyword
+  co-occurrence, and lightweight keyword-based topic clusters.
+- **Reproducibility**: Run manifests, response caching/resume, deterministic
+  ordering, `--dry-run`, and a NEW/UNCHANGED/CHANGED/REMOVED ledger between runs.
+- **Agent-friendly**: Clean CLI subcommands with `--json`, predictable exit
+  codes, a Python API (`import lithos`), and `SKILL.md`.
+- **Domain presets**: Civil, geotechnical, structural, environmental
+  engineering, and general science.
 
-## Usage
-
-```bash
-# Basic usage with two queries
-python3 scripts/lithos.py \
-  --query "scoping review methodology" \
-  --query "automated citation screening" \
-  --from-year 2005 \
-  --limit 40 \
-  --out results/
-
-# Or read queries from a file (one per line)
-python3 scripts/lithos.py --queries-file queries.txt --from-year 2000 --out results/
-```
-
-### Options
-
-- `--query`: Search string (repeatable)
-- `--queries-file`: Path to file with one query per line
-- `--from-year`: Filter results to publication year >= this value
-- `--limit`: Maximum records per query from OpenAlex (default: 40)
-- `--out`: Output directory (default: `results/`)
-
-### Environment
-
-- `SCHOLAR_MAILTO`: Email for polite pool contact with Crossref and OpenAlex. If unset, requests are sent without a mailto parameter and a one-line note is printed. Example: `export SCHOLAR_MAILTO=you@example.org`
-
-## Outputs
-
-All files are written to the `--out` directory:
-
-- `records.json`: Complete record set with all fields.
-- `records.csv`: Flattened table: id, doi, year, first_author, title, venue, cited_by, status, flags, query_hits.
-- `screening.md`: Markdown table for human screening with an empty `include? (Y/N)` column.
-- `counts.json`: PRISMA-ScR style flow counts including per-query identification counts.
-
-## Validation Statuses
-
-Each record receives one of the following statuses:
-
-| Status | Meaning |
-|--------|---------|
-| VALIDATED | DOI resolves, title similarity ≥ 0.90, first-author surname present, year within ±1. |
-| VALIDATED_WITH_WARNINGS | As above but with minor flags (author_order_differs, year_off_by_one, doi_case_fixed). |
-| NO_DOI | Record has no DOI in OpenAlex. |
-| NOT_FOUND_IN_CROSSREF | DOI returns HTTP 404 from Crossref. |
-| MISMATCH | DOI resolves but title similarity < 0.90, or first author absent, or year off by >1. |
-| RETRACTED | Crossref update-to indicates retraction or withdrawal. |
-| CROSSREF_UNREACHABLE | Crossref returned 429/503 after exponential backoff (2, 4, 8 s). |
-
-Flags are recorded in the `flags` field and the CSV/Markdown outputs.
-
-## Design Decisions
-
-- **Google Scholar is not used.** No public API exists and scraping violates its terms of service. OpenAlex and Crossref are used instead.
-- **Crossref author order** sometimes differs from the printed paper. An author-order difference is flagged as a WARNING only, never a failure.
-- **Abstracts** are reconstructed from the OpenAlex inverted index.
-- **Rate limiting**: 0.1 s sleep between Crossref calls; exponential backoff on 429/503.
-- **Deduplication**: By DOI (case-insensitive), then by normalized title for records without DOIs.
-
-## Limitations
-
-- OpenAlex coverage varies by field; conference proceedings and theses may be missed.
-- Paywalled full texts are not retrieved.
-- Abstract reconstruction may lose formatting (italics, subscripts).
-- Crossref bibliographic search is not used; only exact DOI lookup.
-- The tool validates metadata only; it does not assess scientific quality.
-
-## Validation
-
-Unit tests (run with `python3 -m unittest tests/test_lithos.py -v`):
-
-- Abstract reconstruction from inverted index.
-- DOI prefix stripping.
-- Title normalization and similarity.
-- Deduplication logic.
-- Status assignment on hand-made Crossref-like dicts (retraction, author_order_differs, author_mismatch).
-
-Example run (real output saved in `examples/run_demo/`):
+## Installation
 
 ```bash
-SCHOLAR_MAILTO=you@example.org python3 scripts/lithos.py \
-  --query "scoping review methodology" \
-  --query "automated citation screening" \
-  --from-year 2005 --limit 25 --out examples/run_demo/
+# Core: Python standard library only
+pip install lithos
+
+# Optional extras (not required by the core)
+pip install "lithos[excel]"   # XLSX via openpyxl (otherwise stdlib writer is used)
+pip install "lithos[plots]"   # PNG PRISMA diagrams via matplotlib
+pip install "lithos[docx]"    # DOCX reports via python-docx
+pip install "lithos[yaml]"    # YAML configuration files
+pip install "lithos[all]"
 ```
 
-Produced 40 deduplicated records (20 per query) with 27 VALIDATED, 7 VALIDATED_WITH_WARNINGS and 2 NO_DOI; no mismatches, retractions or unreachable lookups.
+## Quick start
 
-## How to Cite
+```bash
+# Simple search across the default sources
+lithos search --query "soil consolidation settlement" --limit 50 --out results/
 
-See `CITATION.cff`. A BibTeX entry is also generated by `cffconvert` if needed.
+# Search from a saved profile (write one from a preset)
+lithos presets --domain civil --name soil_consolidation -o profile.json
+lithos search --profile profile.json --out results/
 
-## Licence
+# Deduplicate, then screen
+lithos dedupe --input results/records.json --out results/
+lithos screen --input results/records.json --rules my_rules.json --out results/
 
-MIT. See `LICENSE`.
+# Reports
+lithos report --input results/records.json --prisma --search-report --evidence-maps --out reports/
+```
+
+## Configuration
+
+Create `lithos.yaml` and pass `--config lithos.yaml`:
+
+```yaml
+polite_email: "reviewer@example.org"   # used in OpenAlex/Crossref polite pool
+openalex:
+  enabled: true
+  rate_limit: 10
+semantic_scholar:
+  enabled: true
+  rate_limit: 1
+  api_key: "optional_key"
+core:
+  enabled: false          # requires an API key
+  api_key: "your_key"
+```
+
+## Domain presets
+
+```bash
+# List all presets
+lithos presets
+
+# Emit one preset as a profile JSON
+lithos presets --domain geotechnical --name foundation_design -o profile.json
+```
+
+Presets are also available from Python:
+
+```python
+import lithos
+lithos.list_presets()                      # {'civil': [...], ...}
+profile = lithos.get_preset("civil", "slope_stability")
+```
+
+## Python API
+
+```python
+import lithos
+from lithos import SearchQuery
+
+lithos.init_adapters({})                   # register adapters
+profile = lithos.get_preset("civil", "slope_stability")
+
+records = []
+for query in profile.queries:
+    for adapter in lithos.get_enabled_adapters():
+        result = adapter.search(query, limit=100)
+        records.extend(result.records)
+
+records, clusters = lithos.deduplicate(records)
+
+for record in records:
+    lithos.validate_record(record)
+
+lithos.export_records(records, "records.csv", lithos.ExportFormat.CSV)
+lithos.export_records(records, "records.ris", lithos.ExportFormat.RIS)
+```
+
+## CLI reference
+
+```
+lithos search     Multi-source literature search
+lithos snowball   Citation chasing (forward/backward, --levels N)
+lithos dedupe     Deduplicate records
+lithos validate   Crossref validation
+lithos screen     Apply screening rules
+lithos export     Export to CSV/XLSX/JSON/RIS/BibTeX/CSL-JSON
+lithos report     PRISMA flow, search report, evidence maps, analytics
+lithos presets    List/emit domain search presets
+lithos config     Show configuration
+```
+
+Global flags: `--config`, `--verbose`, `--json`, `--dry-run`, `--about`,
+`--version`.
+
+## Reproducibility
+
+A run directory contains:
+
+- `.lithos_runs/<run_id>/manifest_<run_id>.json` - run parameters and versions
+- `.lithos_runs/<run_id>/ledger_<run_id>.json` - NEW/UNCHANGED/CHANGED/REMOVED records
+- `.lithos_runs/<run_id>/cache/` - cached source responses for resume
+- `search_log.json` / `search_log.md` - PRISMA-S style search log
+
+## Testing
+
+Offline unit tests use the standard library only and never touch the network:
+
+```bash
+PYTHONPATH=src python -m unittest discover -s tests -v
+```
+
+## Author and license
+
+Copyright (c) 2026 Madeesh P. Nissanka. Released under the [MIT License](LICENSE).
+
+## Citation
+
+See [CITATION.cff](CITATION.cff).
+
+## Status
+
+**v0.2.0** - Alpha. Core features implemented and covered by offline tests.
+Live API behaviour depends on external service availability and rate limits.
+CORE requires an API key and is disabled by default.
+
+## Known limitations
+
+- Semantic Scholar is rate limited to about 1 request/second without an API key.
+- The bundled predatory-venue list is a small illustrative example; supply a
+  curated list with `--predatory-list` for real reviews.
+- No PDF download or full-text retrieval.
+- Topic clustering is keyword-based; there are no ML embeddings in the core.
+- PNG PRISMA diagrams require matplotlib, and DOCX reports require python-docx.
