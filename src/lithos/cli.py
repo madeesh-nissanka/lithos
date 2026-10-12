@@ -3,6 +3,7 @@
 CLI module for LITHOS - subcommands for search, snowball, dedupe, validate, screen, export, report.
 """
 from __future__ import annotations
+from lithos._version import VERSION
 import argparse
 import json
 import logging
@@ -375,9 +376,38 @@ def cmd_screen(args) -> int:
 
     session = ScreeningSession(records=records)
 
+    full_texts: dict[str, str] = {}
+    if getattr(args, "full_text_dir", None):
+        from lithos.fulltext import load_full_text
+
+        ft_dir = Path(args.full_text_dir)
+        entries: dict[str, str] = {}
+        idx_path = ft_dir / "fulltext_index.json"
+        if idx_path.exists():
+            entries = json.loads(idx_path.read_text(encoding="utf-8")).get("entries", {})
+        for record in records:
+            text = load_full_text(record.id, ft_dir, entries)
+            if text:
+                full_texts[record.id] = text
+        logger.info(f"Loaded {len(full_texts)} cached full texts from {ft_dir}")
+
+    reviewer_names = list(getattr(args, "reviewers", None) or [])
+    for name in reviewer_names:
+        session.add_reviewer(name)
+
+    for spec in getattr(args, "import_decisions", None) or []:
+        if "=" not in spec:
+            logger.error(f"--import-decisions expects NAME=file.csv, got: {spec}")
+            return 2
+        name, _, file = spec.partition("=")
+        session.add_reviewer(name)
+        n = session.import_reviewer_decisions(Path(file), name)
+        logger.info(f"Imported {n} decisions for reviewer {name}")
+        reviewer_names = session.reviewers
+
     if args.rules:
         session.rules = ScreeningRules.load(Path(args.rules))
-        session.apply_rules()
+        session.apply_rules(full_texts)
 
     if args.include_keywords or args.exclude_keywords:
         scorer = KeywordScorer()
@@ -388,21 +418,122 @@ def cmd_screen(args) -> int:
             for kw in args.exclude_keywords:
                 scorer.exclude_keywords[kw] = 1.0
         session.keyword_scorer = scorer
-        session.apply_keyword_scoring(args.threshold or 0.5)
+        session.apply_keyword_scoring(args.threshold or 0.5, full_texts)
 
     if args.tfidf_query:
         session.tfidf_ranker = TFIDFRanker()
-        session.apply_tfidf_ranking(args.tfidf_query, args.tfidf_top_k or 50)
+        session.apply_tfidf_ranking(args.tfidf_query, args.tfidf_top_k or 50, full_texts)
 
     out_dir = Path(args.out)
     out_dir.mkdir(parents=True, exist_ok=True)
+
+    if session.decisions:
+        applied = 0
+        for record in records:
+            state, conflict = session.get_consensus(record.id)
+            if state != ScreenState.UNSCREENED:
+                record.screen_state = state
+                applied += 1
+        logger.info(f"Applied {applied} reviewer consensus decisions")
+
     export_records(records, out_dir / "records.json", ExportFormat.JSON)
     export_records(records, out_dir / "records.csv", ExportFormat.CSV)
 
     if args.two_reviewer_export:
         session.export_two_reviewer(out_dir / "screening_two_reviewer.md")
 
+    if getattr(args, "export_forms", False):
+        form_names = reviewer_names if len(reviewer_names) >= 2 else ["Reviewer1", "Reviewer2"]
+        for name in form_names:
+            session.export_reviewer_form(out_dir / f"screen_form_{name}.csv", name)
+        logger.info(f"Exported reviewer forms: {form_names}")
+
+    if getattr(args, "agreement", False):
+        if len(session.reviewers) < 2:
+            logger.error("Agreement requires two reviewers (--reviewers A B or --import-decisions twice)")
+            return 2
+        report = session.agreement_report(session.reviewers[0], session.reviewers[1])
+        session.export_agreement(report, out_dir)
+        (out_dir / "agreement.json").write_text(json.dumps(report.to_dict(), indent=2))
+        logger.info(
+            f"Agreement: {report.percent_agreement:.1f}% absolute, kappa={report.kappa:.4f}, "
+            f"conflicts={len(report.conflicts)}"
+        )
+
     logger.info(f"Screening complete. Included: {sum(1 for r in records if r.screen_state == ScreenState.INCLUDE)}")
+    return 0
+
+
+def cmd_fetch_text(args) -> int:
+    """Fetch open-access full texts (Europe PMC / Unpaywall), cached and polite."""
+    config = load_config(args.config)
+    init_adapters(config)
+
+    records_path = Path(args.input)
+    records = [Record.from_dict(r) for r in json.loads(records_path.read_text())]
+    if args.limit:
+        records = records[: args.limit]
+
+    unpaywall = None
+    if not args.no_unpaywall:
+        try:
+            unpaywall = get_adapter("unpaywall")
+        except Exception:
+            unpaywall = None
+
+    from lithos.fulltext import fetch_full_texts
+
+    out_dir = Path(args.out)
+    index, results = fetch_full_texts(
+        records, out_dir,
+        email=config.get("polite_email"),
+        unpaywall_adapter=unpaywall,
+        force=args.force,
+    )
+    summary = {
+        "requested": len(records),
+        "with_full_text": len(index),
+        "results": results,
+    }
+    (out_dir / "fulltext_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    logger.info(f"Full text retrieved for {len(index)}/{len(records)} records (index: {out_dir / 'fulltext_index.json'})")
+    return 0
+
+
+def cmd_dashboard(args) -> int:
+    """Generate a self-contained offline HTML screening dashboard."""
+    records_path = Path(args.input)
+    records = [Record.from_dict(r) for r in json.loads(records_path.read_text())]
+
+    rules_data = None
+    if args.rules:
+        rules_data = json.loads(Path(args.rules).read_text(encoding="utf-8"))
+
+    from lithos.dashboard import build_dashboard
+
+    out_path = Path(args.out)
+    if out_path.is_dir() or out_path.suffix.lower() not in (".html", ".htm"):
+        out_path = out_path / "screening_dashboard.html"
+    dataset_id = args.dataset_id or f"lithos:{records_path.name}"
+    build_dashboard(records, out_path, rules=rules_data, dataset_id=dataset_id, reviewer=args.reviewer)
+    print(f"Dashboard: {out_path} (open in any browser, works offline)")
+    return 0
+
+
+def cmd_benchmark(args) -> int:
+    """Run measured screening validation on the synthetic benchmark."""
+    from lithos.benchmark import load_benchmark, run_benchmark, metrics_markdown
+
+    bench = load_benchmark(Path(args.input) if args.input else None)
+    results = run_benchmark(bench, args.top_k)
+
+    out_dir = Path(args.out)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "benchmark_metrics.json").write_text(json.dumps(results, indent=2), encoding="utf-8")
+    md = metrics_markdown(results)
+    (out_dir / "benchmark_report.md").write_text(md, encoding="utf-8")
+    print(md)
+    logger.info(f"Benchmark outputs: {out_dir}/benchmark_metrics.json, {out_dir}/benchmark_report.md")
     return 0
 
 
@@ -521,9 +652,9 @@ def main() -> int:
     """Main CLI entry point."""
     parser = argparse.ArgumentParser(
         prog="lithos",
-        description="LITHOS v0.2.0 - Literature Retrieval and Source Validation for Scoping Reviews",
+        description=f"LITHOS v{VERSION} - Literature Retrieval and Source Validation for Scoping Reviews",
     )
-    parser.add_argument("--version", action="version", version="LITHOS 0.2.0")
+    parser.add_argument("--version", action="version", version=f"LITHOS {VERSION}")
     parser.add_argument("--about", action="store_true", help="Show author and license information")
     parser.add_argument("-v", "--verbose", action="store_true", help="Verbose output")
     parser.add_argument("--json", action="store_true", help="JSON output for machine parsing")
@@ -579,8 +710,37 @@ def main() -> int:
     screen_parser.add_argument("--threshold", type=float, default=0.5, help="Keyword score threshold")
     screen_parser.add_argument("--tfidf-query", help="TF-IDF query for relevance ranking")
     screen_parser.add_argument("--tfidf-top-k", type=int, default=50, help="Top K for TF-IDF auto-include")
+    screen_parser.add_argument("--ranker", choices=["tfidf", "semantic"], default="tfidf", help="Ranker for --tfidf-query (TF-IDF/BM25 default; semantic needs lithos[semantic])")
+    screen_parser.add_argument("--model", help="Sentence-transformers model name for --ranker semantic")
+    screen_parser.add_argument("--full-text-dir", help="Directory from 'lithos fetch-text' to screen on full text")
     screen_parser.add_argument("--two-reviewer-export", action="store_true", help="Export two-reviewer format")
+    screen_parser.add_argument("--reviewers", nargs="+", help="Reviewer names (two for agreement stats)")
+    screen_parser.add_argument("--export-forms", action="store_true", help="Write per-reviewer CSV screening forms")
+    screen_parser.add_argument("--import-decisions", action="append", metavar="NAME=file.csv", help="Import filled reviewer decisions (repeatable)")
+    screen_parser.add_argument("--agreement", action="store_true", help="Compute Cohen's kappa + conflict list")
     screen_parser.add_argument("--out", "-o", default="screened_results", help="Output directory")
+
+    # Fetch-text command
+    ft_parser = subparsers.add_parser("fetch-text", help="Fetch open-access full texts (Europe PMC / Unpaywall)")
+    ft_parser.add_argument("--input", "-i", required=True, help="Input records JSON file")
+    ft_parser.add_argument("--out", "-o", default="fulltext", help="Output directory (cache + texts + index)")
+    ft_parser.add_argument("--limit", type=int, help="Max records to attempt")
+    ft_parser.add_argument("--force", action="store_true", help="Ignore cache and refetch")
+    ft_parser.add_argument("--no-unpaywall", action="store_true", help="Do not query Unpaywall (Europe PMC only)")
+
+    # Dashboard command
+    dash_parser = subparsers.add_parser("dashboard", help="Generate a self-contained offline HTML screening dashboard")
+    dash_parser.add_argument("--input", "-i", required=True, help="Input records JSON file")
+    dash_parser.add_argument("--rules", help="Screening rules JSON (used for suggested reasons)")
+    dash_parser.add_argument("--reviewer", default="", help="Default reviewer name")
+    dash_parser.add_argument("--out", "-o", default="screening_dashboard.html", help="Output HTML file")
+    dash_parser.add_argument("--dataset-id", default="", help="Stable id for browser-local decisions (default: from input path)")
+
+    # Benchmark command
+    bench_parser = subparsers.add_parser("benchmark", help="Run measured screening validation on the bundled synthetic benchmark")
+    bench_parser.add_argument("--input", "-i", help="Benchmark JSON file (default: bundled synthetic benchmark)")
+    bench_parser.add_argument("--top-k", type=int, help="Top-k for BM25 auto-include (default: number of relevant records)")
+    bench_parser.add_argument("--out", "-o", default="benchmark", help="Output directory (metrics JSON + markdown report)")
 
     # Export command
     export_parser = subparsers.add_parser("export", help="Export records to various formats")
@@ -636,6 +796,9 @@ def main() -> int:
         "dedupe": cmd_dedupe,
         "validate": cmd_validate,
         "screen": cmd_screen,
+        "fetch-text": cmd_fetch_text,
+        "dashboard": cmd_dashboard,
+        "benchmark": cmd_benchmark,
         "export": cmd_export,
         "report": cmd_report,
         "config": cmd_config,

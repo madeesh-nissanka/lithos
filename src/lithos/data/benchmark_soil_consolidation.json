@@ -1,0 +1,1308 @@
+{
+ "name": "synthetic_soil_consolidation_v1",
+ "topic": "soil consolidation settlement",
+ "description": "Fully SYNTHETIC textbook benchmark. Relevant = one-dimensional or time-dependent consolidation/settlement of soils under load. Includes paraphrase-only positives and lexical hard negatives. Not a real citation set.",
+ "queries": [
+  "soil consolidation settlement",
+  "consolidation settlement soft clay",
+  "time-dependent settlement prediction"
+ ],
+ "include_terms": [
+  "consolidation settlement",
+  "consolidation",
+  "settlement",
+  "compression of",
+  "volume change",
+  "pore pressure dissipation",
+  "degree of consolidation",
+  "secondary compression",
+  "creep"
+ ],
+ "exclude_terms": [
+  "asphalt",
+  "pavement",
+  "concrete",
+  "corrosion",
+  "liquefaction",
+  "scour",
+  "vibration",
+  "rockfill",
+  "market",
+  "accounting",
+  "psychology",
+  "ceramic",
+  "sintering",
+  "noise",
+  "traffic"
+ ],
+ "records": [
+  {
+   "id": "syn-bench-001",
+   "title": "Clay and microsilica effects on consolidation settlement of soft soils",
+   "abstract": "Laboratory oedometer tests measure consolidation settlement of soft clay with microsilica additives; Terzaghi parameters are back-calculated.",
+   "year": 2005,
+   "doi": "10.99999/synthetic.bench.001",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-002",
+   "title": "Preloading with vertical drains for accelerated consolidation of embankment foundations",
+   "abstract": "A case history of preload settlement and degree of consolidation with prefabricated vertical drains.",
+   "year": 2006,
+   "doi": "10.99999/synthetic.bench.002",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-003",
+   "title": "Primary and secondary consolidation settlement prediction in organic clays",
+   "abstract": "Cra vs. secondary compression settlement predictions of organic clay are compared with long-term field data.",
+   "year": 2007,
+   "doi": "10.99999/synthetic.bench.003",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-004",
+   "title": "Numerical modelling of time-dependent consolidation settlement beneath tank structures",
+   "abstract": "Coupled consolidation analysis predicts settlement with time beneath large fuel tanks.",
+   "year": 2008,
+   "doi": "10.99999/synthetic.bench.004",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-005",
+   "title": "Field monitoring of consolidation settlement in dredged material placement",
+   "abstract": "Settlement plates and piezometers record consolidation of dredged fills.",
+   "year": 2009,
+   "doi": "10.99999/synthetic.bench.005",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-006",
+   "title": "Analytical solution for consolidation with depth-dependent permeability",
+   "abstract": "An analytical consolidation settlement model when permeability decreases with depth.",
+   "year": 2010,
+   "doi": "10.99999/synthetic.bench.006",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-007",
+   "title": "Settlement behaviour of soft marine clay under staged loading",
+   "abstract": "Staged construction response measured through consolidation settlement.",
+   "year": 2011,
+   "doi": "10.99999/synthetic.bench.007",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-008",
+   "title": "Electro-osmosis assisted consolidation of fine-grained soils",
+   "abstract": "Combined vacuum and electro-osmosis shortens consolidation settlement time.",
+   "year": 2012,
+   "doi": "10.99999/synthetic.bench.008",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-009",
+   "title": "Vacuum preloading performance: consolidation settlement and pore pressures",
+   "abstract": "Piezometer and settlement data during vacuum consolidation.",
+   "year": 2013,
+   "doi": "10.99999/synthetic.bench.009",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-010",
+   "title": "Machine learning surrogate for consolidation settlement estimation",
+   "abstract": "A data-driven surrogate predicts consolidation settlement from index properties.",
+   "year": 2014,
+   "doi": "10.99999/synthetic.bench.010",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-011",
+   "title": "Viscoelastic consolidation settlement of peat",
+   "abstract": "Secondary consolidation settlement in peat modelled with creep coefficients.",
+   "year": 2015,
+   "doi": "10.99999/synthetic.bench.011",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-012",
+   "title": "One-dimensional consolidation settlement using hyperbolic void ratio curves",
+   "abstract": "Compression indices and settlement computation from oedometer hyperbolic fits.",
+   "year": 2016,
+   "doi": "10.99999/synthetic.bench.012",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-013",
+   "title": "Thermal effects on consolidation settlement of saturated clay",
+   "abstract": "Thermal consolidation settlement tests on saturated Kaolin.",
+   "year": 2017,
+   "doi": "10.99999/synthetic.bench.013",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-014",
+   "title": "Settlement and stability of foundations on consolidating ground",
+   "abstract": "Foundation design against consolidation settlement in soft ground.",
+   "year": 2018,
+   "doi": "10.99999/synthetic.bench.014",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-015",
+   "title": "Back-analysis of embankment settlement on soft clay",
+   "abstract": "Embankment failure and settlement records are used for consolidation back-analysis.",
+   "year": 2019,
+   "doi": "10.99999/synthetic.bench.015",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-016",
+   "title": "Small-strain stiffness during consolidation settlement",
+   "abstract": "b0 stiffness changes measured while consolidation settlement develops.",
+   "year": 2020,
+   "doi": "10.99999/synthetic.bench.016",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-017",
+   "title": "Carbonate sand consolidation settlement under cyclic loading",
+   "abstract": "Post-cyclic consolidation settlement measurements in carbonate sand.",
+   "year": 2021,
+   "doi": "10.99999/synthetic.bench.017",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-018",
+   "title": "Settlement control charts for consolidation works",
+   "abstract": "Practical charts for degree of consolidation and remaining settlement.",
+   "year": 2022,
+   "doi": "10.99999/synthetic.bench.018",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-019",
+   "title": "Desiccation and consolidation settlement interaction in expansive soils",
+   "abstract": "Cracking and consolidation settlement interplay in expansive clay.",
+   "year": 2023,
+   "doi": "10.99999/synthetic.bench.019",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-020",
+   "title": "Consolidation settlement of mine tailings under self weight",
+   "abstract": "Tailings deposit consolidation settlement profile over years.",
+   "year": 2024,
+   "doi": "10.99999/synthetic.bench.020",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-021",
+   "title": "Inversion of consolidation parameters from settlement time series",
+   "abstract": "Settlement time series inversion yields cv and ch.",
+   "year": 2005,
+   "doi": "10.99999/synthetic.bench.021",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-022",
+   "title": "Mixer-plant bonded soil: consolidation and settlement assessment",
+   "abstract": "Bonded soil columns tested for consolidation settlement.",
+   "year": 2006,
+   "doi": "10.99999/synthetic.bench.022",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-023",
+   "title": "Settlement of structures on heterogeneous clay deposits",
+   "abstract": "Layered consolidation settlement over heterogeneous clay.",
+   "year": 2007,
+   "doi": "10.99999/synthetic.bench.023",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-024",
+   "title": "Interpretation of oedometer data for consolidation settlement",
+   "abstract": "Guidance on interpreting oedometer data for settlement.",
+   "year": 2008,
+   "doi": "10.99999/synthetic.bench.024",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-025",
+   "title": "Deformation of compressible clay under long-term embankment loading",
+   "abstract": "Time-dependent compression of soft clay beneath an embankment, including dissipation of excess pore pressure.",
+   "year": 2009,
+   "doi": "10.99999/synthetic.bench.025",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-026",
+   "title": "Compression of sensitive clay under sustained loads",
+   "abstract": "Sustained load compression behaviour with pore pressure dissipation in sensitive marine clay.",
+   "year": 2010,
+   "doi": "10.99999/synthetic.bench.026",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-027",
+   "title": "Embankment-induced ground settlement over soft estuarine deposits",
+   "abstract": "Settlement of estuarine deposits caused by surcharge loading.",
+   "year": 2011,
+   "doi": "10.99999/synthetic.bench.027",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-028",
+   "title": "Time-dependent compression of landfill liner clay",
+   "abstract": "Long-term volume change of liner clay under overburden.",
+   "year": 2012,
+   "doi": "10.99999/synthetic.bench.028",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-029",
+   "title": "Pore pressure dissipation and ground deformation behind a deep excavation",
+   "abstract": "Recompression and delayed deformation behind braced excavations.",
+   "year": 2013,
+   "doi": "10.99999/synthetic.bench.029",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-030",
+   "title": "Volume change behaviour of compacted clay liners",
+   "abstract": "Compacted clay swelling and compression under wetting cycles.",
+   "year": 2014,
+   "doi": "10.99999/synthetic.bench.030",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-031",
+   "title": "Squeezing of soft ground around tunnel linings over decades",
+   "abstract": "Long-term squeeze deformation in soft-ground tunnels.",
+   "year": 2015,
+   "doi": "10.99999/synthetic.bench.031",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-032",
+   "title": "Embankment settlement on floating granular columns",
+   "abstract": "Load transfer platforms and column-supported embankments with time-dependent settlement.",
+   "year": 2016,
+   "doi": "10.99999/synthetic.bench.032",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-033",
+   "title": "Compression of soft ground with stone columns under sustained load",
+   "abstract": "Stone column ground improvement and settlement performance.",
+   "year": 2017,
+   "doi": "10.99999/synthetic.bench.033",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-034",
+   "title": "Pore collapse and surface lowering in gassy estuarine mud",
+   "abstract": "Gassy mud surface lowering under self-weight.",
+   "year": 2018,
+   "doi": "10.99999/synthetic.bench.034",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-035",
+   "title": "Surface subsidence due to peat oxidation in organic soils",
+   "abstract": "Subsidence by organic matter decomposition in wetlands.",
+   "year": 2019,
+   "doi": "10.99999/synthetic.bench.035",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-036",
+   "title": "Long-term ground deformation over soft cohesive deposits",
+   "abstract": "Multi-decade ground deformation records in cohesive deposits.",
+   "year": 2020,
+   "doi": "10.99999/synthetic.bench.036",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-037",
+   "title": "Compression of fine-grained soils under oedometric conditions",
+   "abstract": "Volume change of fine-grained soils under oedometer compression.",
+   "year": 2021,
+   "doi": "10.99999/synthetic.bench.037",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-038",
+   "title": "Rutting and surface deformation of unbound pavement layers under traffic",
+   "abstract": "Wheel-load rutting of granular layers.",
+   "year": 2022,
+   "doi": "10.99999/synthetic.bench.038",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-039",
+   "title": "Slope stability and creep of landslides",
+   "abstract": "Long-run landslide creep velocity.",
+   "year": 2023,
+   "doi": "10.99999/synthetic.bench.039",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-040",
+   "title": "Dewatering of sands",
+   "abstract": "Water withdrawal from sand.",
+   "year": 2024,
+   "doi": "10.99999/synthetic.bench.040",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-041",
+   "title": "Sedimentation in reservoirs",
+   "abstract": "Reservoir sedimentation.",
+   "year": 2005,
+   "doi": "10.99999/synthetic.bench.041",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-042",
+   "title": "Compression of powder metallurgy",
+   "abstract": "Powder sintering.",
+   "year": 2006,
+   "doi": "10.99999/synthetic.bench.042",
+   "venue": "Journal of Synthetic Geotechnics",
+   "authors": [
+    "Synthetic, A.",
+    "Model, B."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "soil"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-043",
+   "title": "Fatigue cracking of asphalt pavements under heavy vehicle loads",
+   "abstract": "Field cores and accelerated pavement testing evaluate bituminous layer fatigue.",
+   "year": 2003,
+   "doi": "10.99999/synthetic.bench.043",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-044",
+   "title": "Chloride ingress and corrosion of reinforced concrete",
+   "abstract": "Rapid chloride migration testing of fly-ash concrete.",
+   "year": 2004,
+   "doi": "10.99999/synthetic.bench.044",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-045",
+   "title": "Bearing capacity of shallow foundations on sand",
+   "abstract": "Plate load tests and SPT correlations for driven piles.",
+   "year": 2005,
+   "doi": "10.99999/synthetic.bench.045",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-046",
+   "title": "Slope stability analysis of weathered rockfill dams",
+   "abstract": "Limit equilibrium and strength reduction stability of rockfill.",
+   "year": 2006,
+   "doi": "10.99999/synthetic.bench.046",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-047",
+   "title": "Image segmentation of crack patterns using convolutional networks",
+   "abstract": "Deep learning crack segmentation on public datasets.",
+   "year": 2007,
+   "doi": "10.99999/synthetic.bench.047",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-048",
+   "title": "Ground vibration from traffic and its mitigation",
+   "abstract": "Vibration measurement and barrier design near roads.",
+   "year": 2008,
+   "doi": "10.99999/synthetic.bench.048",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-049",
+   "title": "Scour around bridge piers in rivers",
+   "abstract": "Clear-water pier scour depth experiments.",
+   "year": 2009,
+   "doi": "10.99999/synthetic.bench.049",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-050",
+   "title": "Seismic site response of gravelly soils",
+   "abstract": "Shake table response of dense gravel deposits.",
+   "year": 2010,
+   "doi": "10.99999/synthetic.bench.050",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-051",
+   "title": "Liquefaction triggering in loose sandy soils",
+   "abstract": "Cyclic triaxial triggering tests in sand.",
+   "year": 2011,
+   "doi": "10.99999/synthetic.bench.051",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-052",
+   "title": "Rockbolt support in jointed rock masses",
+   "abstract": "Rock mass classification and support design.",
+   "year": 2012,
+   "doi": "10.99999/synthetic.bench.052",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-053",
+   "title": "Pavement recycling with foamed asphalt",
+   "abstract": "Cold in-place recycling performance.",
+   "year": 2013,
+   "doi": "10.99999/synthetic.bench.053",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-054",
+   "title": "Concrete durability under freeze-thaw cycles",
+   "abstract": "Scaling of air-entrained concrete.",
+   "year": 2014,
+   "doi": "10.99999/synthetic.bench.054",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-055",
+   "title": "Memory consolidation in cognitive psychology",
+   "abstract": "Rehearsal and forgetting studies.",
+   "year": 2015,
+   "doi": "10.99999/synthetic.bench.055",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-056",
+   "title": "Corporate consolidation in the cement industry",
+   "abstract": "Market concentration analysis.",
+   "year": 2016,
+   "doi": "10.99999/synthetic.bench.056",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-057",
+   "title": "Financial consolidation rules for subsidiaries",
+   "abstract": "Accounting policy review.",
+   "year": 2017,
+   "doi": "10.99999/synthetic.bench.057",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-058",
+   "title": "Settlement of offshore wind jacket foundations in cyclic sand",
+   "abstract": "Cyclic settlement accumulation in loose sand.",
+   "year": 2018,
+   "doi": "10.99999/synthetic.bench.058",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-059",
+   "title": "Differential settlement of buildings on expansive clay heave",
+   "abstract": "Heave-driven cracking, not consolidation.",
+   "year": 2019,
+   "doi": "10.99999/synthetic.bench.059",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-060",
+   "title": "Consolidation of the European energy market",
+   "abstract": "Policy analysis.",
+   "year": 2020,
+   "doi": "10.99999/synthetic.bench.060",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-061",
+   "title": "Sintering and densification of ceramic powders",
+   "abstract": "Ceramic processing.",
+   "year": 2021,
+   "doi": "10.99999/synthetic.bench.061",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-062",
+   "title": "Groundwater flow and aquifer recharge modelling",
+   "abstract": "Regional groundwater budgets.",
+   "year": 2022,
+   "doi": "10.99999/synthetic.bench.062",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-063",
+   "title": "Embankment dam construction on rockfill",
+   "abstract": "Rockfill dam compaction control.",
+   "year": 2023,
+   "doi": "10.99999/synthetic.bench.063",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-064",
+   "title": "Wave runup on coastal revetments",
+   "abstract": "Physical modelling of runup.",
+   "year": 2024,
+   "doi": "10.99999/synthetic.bench.064",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-065",
+   "title": "Traffic noise mapping in urban areas",
+   "abstract": "Sound propagation modelling.",
+   "year": 2003,
+   "doi": "10.99999/synthetic.bench.065",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-066",
+   "title": "Structural design of steel connections",
+   "abstract": "Bolted joint behaviour.",
+   "year": 2004,
+   "doi": "10.99999/synthetic.bench.066",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-067",
+   "title": "Sediment compaction in coastal deltas at geological timescales",
+   "abstract": "Burial diagenesis over millennia.",
+   "year": 2005,
+   "doi": "10.99999/synthetic.bench.067",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-068",
+   "title": "Rockfall trajectories and net protection",
+   "abstract": "Runout analysis.",
+   "year": 2006,
+   "doi": "10.99999/synthetic.bench.068",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-069",
+   "title": "Erosion of earthen channels under shear",
+   "abstract": "Shear erodibility tests.",
+   "year": 2007,
+   "doi": "10.99999/synthetic.bench.069",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-070",
+   "title": "Micropile capacity in karst limestone",
+   "abstract": "Drilled shaft testing.",
+   "year": 2008,
+   "doi": "10.99999/synthetic.bench.070",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-071",
+   "title": "Rail track geometry degradation",
+   "abstract": "Tamping intervals.",
+   "year": 2009,
+   "doi": "10.99999/synthetic.bench.071",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  },
+  {
+   "id": "syn-bench-072",
+   "title": "Shrinkage of cement-stabilised soils",
+   "abstract": "Drying shrinkage cracking.",
+   "year": 2010,
+   "doi": "10.99999/synthetic.bench.072",
+   "venue": "Journal of Synthetic Engineering",
+   "authors": [
+    "Synthetic, C.",
+    "Sample, D."
+   ],
+   "source": "synthetic",
+   "keywords": [
+    "other"
+   ],
+   "publication_type": "journal-article"
+  }
+ ],
+ "relevant_ids": [
+  "syn-bench-001",
+  "syn-bench-002",
+  "syn-bench-003",
+  "syn-bench-004",
+  "syn-bench-005",
+  "syn-bench-006",
+  "syn-bench-007",
+  "syn-bench-008",
+  "syn-bench-009",
+  "syn-bench-010",
+  "syn-bench-011",
+  "syn-bench-012",
+  "syn-bench-013",
+  "syn-bench-014",
+  "syn-bench-015",
+  "syn-bench-016",
+  "syn-bench-017",
+  "syn-bench-018",
+  "syn-bench-019",
+  "syn-bench-020",
+  "syn-bench-021",
+  "syn-bench-022",
+  "syn-bench-023",
+  "syn-bench-024",
+  "syn-bench-025",
+  "syn-bench-026",
+  "syn-bench-027",
+  "syn-bench-028",
+  "syn-bench-029",
+  "syn-bench-030",
+  "syn-bench-031",
+  "syn-bench-032",
+  "syn-bench-033",
+  "syn-bench-034",
+  "syn-bench-035",
+  "syn-bench-036",
+  "syn-bench-037",
+  "syn-bench-038",
+  "syn-bench-039",
+  "syn-bench-040",
+  "syn-bench-041",
+  "syn-bench-042"
+ ]
+}

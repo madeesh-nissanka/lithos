@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use LITHOS in academic work, please cite it as below."
 title: "LITHOS: Literature Retrieval and Source Validation for Scoping Reviews"
 abstract: "An expert-grade, dependency-light command line tool and Python library for systematic and scoping review literature retrieval across multiple scholarly databases, with deduplication, validation, screening, analytics, and reproducible reporting."
-version: "0.2.0"
-date-released: "2026-10-11"
+version: "0.3.0"
+date-released: "2026-10-12"
 license: MIT
 authors:
   - family-names: "Nissanka"

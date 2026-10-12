@@ -60,7 +60,7 @@ class TestCLI(unittest.TestCase):
         exit_code, out = self._run_cli(["--about"])
         self.assertEqual(exit_code, 0)
         self.assertIn("Madeesh P. Nissanka", out)
-        self.assertIn("LITHOS 0.2.0", out)
+        from lithos._version import VERSION as _V; self.assertIn(f"LITHOS {_V}", out)
 
     def test_dry_run_search(self):
         """--dry-run search -q should return 0 without network."""

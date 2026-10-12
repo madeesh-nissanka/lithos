@@ -1,0 +1,44 @@
+{
+  "benchmark": "synthetic_soil_consolidation_v1",
+  "n_records": 72,
+  "n_relevant": 42,
+  "note": "Fully synthetic, hand-labeled benchmark; measures screening, not live retrieval.",
+  "methods": [
+    {
+      "method": "rules",
+      "tp": 34,
+      "fp": 2,
+      "fn": 2,
+      "tn": 15,
+      "precision": 0.9444,
+      "recall": 0.9444,
+      "f1": 0.9444,
+      "auto_screened": 53,
+      "work_saved": 0.7361
+    },
+    {
+      "method": "bm25_top_k",
+      "tp": 36,
+      "fp": 6,
+      "fn": 6,
+      "tn": 24,
+      "precision": 0.8571,
+      "recall": 0.8571,
+      "f1": 0.8571,
+      "auto_screened": 60,
+      "work_saved": 0.8333
+    },
+    {
+      "method": "rules_then_bm25",
+      "tp": 40,
+      "fp": 2,
+      "fn": 2,
+      "tn": 28,
+      "precision": 0.9524,
+      "recall": 0.9524,
+      "f1": 0.9524,
+      "auto_screened": 59,
+      "work_saved": 0.8194
+    }
+  ]
+}

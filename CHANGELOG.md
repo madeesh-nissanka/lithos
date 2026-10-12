@@ -5,6 +5,27 @@ All notable changes to LITHOS will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-10-12
+
+### Added
+- **Offline HTML screening dashboard** (`lithos dashboard`): single self-contained HTML file with embedded records, localStorage persistence, include/exclude/tag buttons, suggested reasons, live PRISMA counts, CSV/JSON export importable by `lithos screen --import-decisions`.
+- **Dual-reviewer workflow** (`lithos screen --reviewers A B --export-forms --agreement`): per-reviewer CSV forms, round-trip import, Cohen's kappa agreement statistics, confusion matrix, conflict list (CSV + Markdown summary).
+- **Open-access full-text fetch** (`lithos fetch-text`): polite, cached retrieval from Europe PMC (fullTextXML) and Unpaywall OA locations; stdlib HTML/XML/PDF text extraction; screen on full text via `--full-text-dir`.
+- **Optional local semantic screening/clustering** (`pip install "lithos[semantic]"`): `SemanticRanker` for cosine-similarity ranking and `semantic_clusters()` for greedy single-linkage clustering; TF-IDF/BM25 remains default.
+- **Measured validation benchmark** (`lithos benchmark`): synthetic textbook benchmark (soil consolidation settlement) with hand-labeled ground truth; reports precision, recall, F1, work-saved for rule screening, BM25 top-k, and combined methods.
+- **Curated predatory venue list**: archived Beall's List snapshot (2016 publishers, 2017 standalone journals) with source/commit/retrieval headers, shipped in `src/lithos/data/`, configurable via `--predatory-list` or `ValidationConfig.predatory_venue_list`.
+- **Semantic Scholar API key support**: higher rate limits when `semantic_scholar.api_key` is set in config.
+
+### Changed
+- Version bump to 0.3.0 throughout (pyproject.toml, _version.py, CLI, CITATION.cff).
+- HTTP client in fulltext fetcher now uses `VERSION` from `_version.py` instead of hardcoded string.
+- README and SKILL.md updated with v0.3.0 features and honest installation instructions.
+- Known limitations updated: predatory list is archived snapshot; PDF extraction is best-effort; semantic embeddings optional; dual-reviewer is file round-trip.
+
+### Fixed
+- Removed internal files (CONTRACTS.md, smoke_test/) from repository.
+- Docs directory will be populated in this release.
+
 ## [0.2.0] - 2026-10-11
 
 ### Added

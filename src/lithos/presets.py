@@ -103,7 +103,7 @@ GEOTECH_PRESETS = {
         name="geotechnical_earthquake",
         description="Geotechnical earthquake engineering",
         queries=[
-            SearchQuery(original="earthquake-induced ground settlement", boolean_query="earthquake-induced ground settlement"),
+            SearchQuery(original="liquefaction assessment", boolean_query="liquefaction assessment"),
             SearchQuery(original="seismic site response", boolean_query="seismic site response"),
             SearchQuery(original="ground motion amplification", boolean_query="ground motion amplification"),
             SearchQuery(original="seismic slope stability", boolean_query="seismic slope stability"),

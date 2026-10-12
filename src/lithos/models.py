@@ -3,6 +3,7 @@
 Core data models for LITHOS.
 """
 from __future__ import annotations
+from lithos._version import VERSION
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from enum import Enum
@@ -274,7 +275,7 @@ class AnalyticsResult:
 class RunManifest:
     """Manifest of a complete run for reproducibility."""
     run_id: str
-    lithos_version: str = "0.2.0"
+    lithos_version: str = VERSION
     python_version: str = ""
     started_at: str = ""
     completed_at: Optional[str] = None

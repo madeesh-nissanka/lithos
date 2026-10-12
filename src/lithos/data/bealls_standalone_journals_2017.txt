@@ -1,0 +1,2028 @@
+# LITHOS predatory venue data file
+# Source: Beall's List, as archived in the public GitHub mirror "peixian/predatory-publishers"
+#   (repo: https://github.com/peixian/predatory-publishers, branch master,
+#    commit 6cbf2e27ec916f02788851e4396fa40ffc9bbdd8), retrieved 2026-10-12.
+# The original list was compiled by librarian Jeffrey Beall before his site was taken down in
+#   January 2017 (background: insidehighered.com news article 2017-01-18 cited by the mirror).
+# No license notice was found in the mirror; entries are reproduced as an archived snapshot.
+# WARNING: this is an ARCHIVED list. Publishers and journals change practices over time.
+#   Treat a flag as a prompt to verify independently, never as proof of misconduct.
+# Entries: standalone journal titles and abbreviations (lowercase), substring-matched against record venue.
+academic exchange quarterly
+academic research reviews
+academy of contemporary research journal
+aocrj
+acme intellects
+acta  de gerencia ciencia
+cagena
+acta advances in agricultural sciences
+aaas
+acta kinesiologica
+acta medica international
+acta scientiae et intellectus
+acta velit
+advance journals of engineering mathematics and computer sciences
+ajemcs
+advance research journal of multidisciplinary discoveries
+advanced science journal
+advances in aerospace science and technology
+aast
+advances in biomedicine and pharmacy
+abp
+advances in forestry letter
+advances in science, technology and engineering systems journal
+afrasian journal of humanities and social sciences
+aajhss
+african journal of traditional, complementary and alternative medicines
+ajtcam
+aging
+ahead international journal of recent research review
+aijrrr
+al ameen journal of medical sciences
+ajms
+aloy journal of soft computing and applications
+ajsca
+american based research journal
+abrj
+american international journal of contemporary research
+aijcr
+american international journal of contemporary scientific research
+american journal of advanced agricultural research
+ajaar
+american journal of advanced drug delivery
+american journal of advanced scientific research
+ajasr
+american journal of advances in medical science
+arnaca
+american journal of biotechnology and medical research
+american journal of engineering research
+american journal of essential oils and natural products
+american journal of innovative research and applied sciences
+ajiras
+american journal of pharmacy and health research
+ajphr
+american journal of pharmtech research
+ajptr
+american journal of phytomedicine and clinical therapeutics
+american journal of research communication
+ajrc
+american journal of scientific research
+american journal of social issues and humanities
+american research thoughts
+american scientific research journal for engineering, technology, and sciences
+asrjets
+american transactions on engineering & applied sciences
+anglisticum
+annals of eurasian medicin
+annals of british medical sciences
+abms
+annals of clinical case reports
+annals of international medical and dental research
+aimdr
+annals of medical and biomedical sciences
+ambs
+annals of phytomedicine
+applied research journal
+archives des sciences journal
+archives of clinical and experimental surgery
+arnaca american journal of advances in medical science
+arpn journal of science and technology
+arpn journal of systems and software
+asia pacific journal of education, arts and sciences
+apjeas
+asia-pacific journal of multidisciplinary research
+asian pacific journal of natural products
+apjnp
+asian pacific journal of pharmacy and phytochemistry
+apjpp
+asia-pacific journal of research
+asian journal of applied science and engineering
+asian journal of biomedical and pharmaceutical sciences
+asian journal of chemistry
+asian journal of health and medical sciences
+asian journal of humanities and social sciences
+asian journal of business and management sciences
+ajbms
+asian journal of mathematics and applications
+asian journal of multidisciplinary studies
+asian journal of pharmaceutical and health sciences
+asian journal of pharmacy and life science
+asian journal of pharmaceutical research and health care
+ajprhc
+asian journal of science and technology
+asian pacific journal of health sciences
+apjhs
+asian pacific journal of tropical disease
+asian research journal of business management
+arjbm
+australasian journal of herpetology
+australasian medical journal
+amj
+australian journal of basic and applied sciences
+australian journal of business and management research
+ajbmr
+astronomical review
+averroes european medical journal
+averroes-emj
+ayupharm: international journal of ayurveda and allied sciences
+ayushdhar
+bio bulletin
+bioinformation
+biointerface research in applied chemistry
+biomaterials and tissue engineering bulletin
+biomedical & pharmacology journa
+biomedical engineering review
+bionano frontier
+biopharm journal
+bioscan
+bioresearch bulletin
+bioscience and bioengineering communications
+bbc
+bioscience biotechnology research communications
+bbrc
+bioscience discovery
+biosciences, biotechnology research asia
+bbra
+biosciences international
+biotechnological research
+botany journal
+british biomedical bulletin
+british journal of economics, finance and management sciences
+british journal of interdisciplinary studies
+british journal of medical and health research
+bjmhr
+british journal of science
+buletin teknologi makanan
+bulletin of applied and research science
+bars
+bulletin of environment, pharmacology and life sciences
+bepls
+bulletin of mathematical sciences & applications
+bulletin of pharmaceutical research
+bulletin of society for mathematical services and standards
+business and economics journal
+business review, cambridge
+calodema
+canadian chemical transactions
+canadian international journal of science and technology
+canadian journal of basic and applied sciences
+canadian journal of biotechnology
+canadian journal of pure and applied sciences
+canadian scientific journal
+cancer research frontiers
+cardiology and cardiovascular medicine
+caribbean journal of science and technology
+case study and case report
+caspian sea journal
+csj
+cellular and molecular biology
+centrum
+chemical science transactions
+chemistry research journal
+clinics in oncology
+clinics in surgery
+columban journal of life sciences
+communications on applied electronics
+cae
+computational research progress in applied science & engineering
+computer science chronicle
+computer science journal
+contemporary research in india
+contemporary sociological global review
+csgr
+criterion: an international journal in english
+cumhuriyet science journal
+current biotica
+current botany
+current discovery
+current trends in technology and sciences
+ctts
+dav international journal of science
+davijs
+dawn journal
+der pharma chemica
+direct research journals
+diyala journal for pure science
+djps
+east european science journal
+eastern academic journal
+eastern european scientific journal
+e-library science research journal
+ecoforum
+ecoletra.com scientific ejournal
+education reform journal
+eduved global management research
+gmr
+eduved, international journal of interdisciplinary research
+electronic journal of biology
+ejbio
+electronic journal of engineering and technology
+ejet
+electronic journal of geotechnical engineering
+ejge
+electronic journal of vocational colleges
+elixir international journal
+engineering & it journal
+engineering physics and thermodynamics journal
+engineering research journal
+entomology and applied science letters
+easl
+essence: international journal for environmental rehabilitation and conservation
+euro-afro journal of arts and social sciences
+eajass
+european academic research
+european chemical bulletin
+ecb
+european environmental sciences and ecology journal
+european international journal of science and humanities
+eijsh
+european international journal of science and technology
+european journal of academic essays
+ejae
+european journal of advanced computer science
+ejacs
+european journal of advances in engineering & technology
+ejaet
+european journal of biomedical and pharmaceutical sciences
+ejbps
+european journal of biotechnology and bioscience
+european journal of business and social sciences
+ejbss
+european journal of chemistry
+eurjchem
+european journal of contemporary economics and management
+european journal of economics, finance and administrative sciences
+european journal of educational research
+eujer
+european journal of educational sciences
+ejes
+european journal of engineering research and science
+ejers
+european journal of natural history
+ejnh
+european journal of pharmaceutical and medical research
+ejpmr
+european journal of science and theology
+european journal of scientific research
+european journal of social sciences
+european journal of sustainable development
+european law and politics journal
+elpj
+european online journal of natural and social sciences
+european scientific journal
+experiment
+first independent scientific journal
+fluids: international journal of medical fluid management
+food biology
+forex technical journal library
+frontiers in aerospace engineering
+functional analysis: theory, method & applications
+fatma
+g-journal of environmental science and technology
+gjest
+g-journal of education, social science and humanities
+gjesh
+galaxy: international multidisciplinary research journal
+genes & cancer
+generics and biosimilars initiative journal
+genetics and molecular research
+geodynamics research international bulletin
+grib
+global business & finance review
+global journal for research analysis
+gjra
+global journal of advanced engineering technologies and sciences
+gjaets
+global journal of advanced research
+gjar
+global journal of animal scientific research
+gjasr
+global journal of business and social science
+gjbss
+global journal of business and social science review
+gjbssr
+global journal of engineering science and research management
+gjesrm
+global journal of management science and technology
+global journal of medical and health sciences
+gjm
+global journal of medicine and public health
+global journal of multidisciplinary studies
+gjms
+global media journal
+golden research thoughts
+global scholastic research journal
+hctl open international journal of technology innovations and research
+ijtir
+hiperboreea journal
+hortflora research spectrum
+hrs
+hygeia: journal for drugs and medicines
+iars' international research journal
+i'irj
+ideal journal of arts and humanities
+ijah
+ideal journal of engineering and applied sciences
+ijeas
+ideal journal of economics and management sciences
+ijems
+ideal journal of pure and applied sciences
+ijesam
+ideal journal of education and policy studies
+ijepas
+ideal journal of psychology and theology
+ijopat
+indian journal of advanced nursing
+ijan
+indian journal of advances in chemical science
+ijacs
+indian journal of applied-basic medical sciences
+indian journal of applied research
+indian journal of drugs
+indian journal of medical research and pharmaceutical sciences
+ijmrps
+indian journal of natural sciences
+ijons
+indian journal of pharmaceutical and biological research
+ijpbr
+indian journal of pharmaceutical science & research
+ijpsr
+indian journal of research anvikshiki
+indian journal of research in pharmacy and biotechnology
+ijrpb
+indian journal of scientific research
+ijsr
+indian journal of scientific research and technology
+indjsrt
+indian research journal of pharmacy and science
+indian scholar
+indian streams research journal
+indo american journal of pharmaceutical research
+indo american journal of pharmaceutical sciences
+iajps
+indo-global journal of pharmaceutical sciences
+industrial science journal
+information-an international interdisciplinary journal
+innovations in pharmaceuticals and pharmacotherapy
+ipp
+institute of electrical & electronics engineers advanced journal
+ieeeaj
+integrated journal of british
+ijbritish
+interdisciplinary journal of contemporary research in business
+interdisciplinary journal of research in business
+idjrb
+interdisciplinary toxicology
+intertox
+internal medicine review
+international advanced research journal in science, engineering and technology
+iarjset
+international archives of biomedical and clinical research
+iabcr
+international archives of medicine
+international ayurvedic medical journal
+iamj
+international asian research journal
+tiarj
+international biology review
+international bulletin of business administration
+international cardiovascular forum
+international chemistry review
+international design journal
+international economic letters
+international education and research journal
+international educational e-journal
+international educational scientific research journal
+international interdisciplinary journal of education
+iije
+international interdisciplinary journal of scientific research
+iijsr
+international journal & magazine of engineering, technology, management and research
+ijmetmr
+international journal advances in social science and humanities
+ijassh
+international journal and bulletin of multidisciplinary research
+ijbmr
+international journal for advanced review and research in pharmacy
+ijarrp
+international journal for development of computer science and technology
+ijdcst
+international journal for innovation education and research
+ijier
+international journal for innovative research in multidisciplinary field
+ijirmf
+international journal for innovative research in science and technology
+ijirst
+international journal for modern trends in science and technology
+ijmtst
+international journal for pharmaceutical research scholars
+ijprs
+international journal for research & development in technology
+ijrdt
+international journal for research in applied science and engineering technology
+ijraset
+international journal for research in emerging science and technology
+ijrest
+international journal for research in engineering application & management
+ijream
+international journal for scientific research & development
+international journal for technological research in engineering
+ijtre
+international journal of abdominal research
+ijar
+international journal of academic research
+international journal of academic studies
+ijas
+international journal of advance computing techniques and applications
+ijacta
+international journal of advance engineering and research development
+ijaerd
+international journal of advance foundation and research in computer
+ijafrc
+international journal of advance foundation and research in science and engineering
+ijafrse
+international journal of advance research and innovation
+international journal of advance research and innovative ideas in education
+ijariie
+international journal of advance research, ideas and innovations in technology
+ijariit
+international journal of advance research in computer science and management
+ijarcsms
+international journal of advance research in science and engineering
+ijarse
+international journal of advanced academic research
+ijaar
+international journal of advanced and applied sciences
+ijaas
+international journal of advanced and innovative research
+ijair
+international journal of advanced computer technology
+ijact
+compusoft
+international journal of advanced education and research
+ijmrd
+international journal of advanced engineering and management research
+ijaemr
+international journal of advanced engineering and nano technology
+ijaent
+international journal of advanced engineering applications
+international journal of advanced engineering, management and science
+ijaems
+international journal of advanced engineering research and applications
+ija-era
+international journal of advanced engineering research and science
+ijaers
+international journal of advanced engineering science and technological research
+ijaestr
+international journal of advanced information in arts science and management
+ijaiasm
+international journal of advanced information science and technology
+ijaist
+international journal of advanced life sciences
+international journal of advanced multidisciplinary research
+ijamr
+international journal of advanced networking and applications
+ijana
+international journal of advanced research
+international journal of advanced research and review
+ijarr
+international journal of advanced research in applied science and technology
+ijarast
+international journal of advanced research in biological sciences
+ijarbs
+international journal of advanced research in biology, ecology, science and technology
+ijarbest
+international journal of advanced research in computer and communication engineering
+ijarcce
+international journal of advanced research in computer science and electronics engineering
+ijarcsee
+international journal of advanced research in computer science and software engineering
+ijarcsse
+international journal of advanced research in computer science & technology
+ijarcst
+international journal of advanced research in education & technology
+ijaret
+international journal of advanced research in electrical, electronics and instrumentation engineering
+ijareeie
+international journal of advanced research in engineering & management
+ijarem
+international journal of advanced research in engineering and science
+ijares
+international journal of advanced research in mechanical engineering & technology
+ijarmet
+international journal of advanced research in science and technology
+ijarst
+international journal of advanced research in science, engineering and technology
+ijarset
+international journal of advanced science and engineering technology
+ijaset
+international journal of advanced scientific research & development
+ijasrd
+international journal of advanced technology and innovative research
+ijatir
+international journal of advanced technology in engineering and science
+ijates
+international journal of advanced technology and engineering research
+ijater
+international journal of advanced technology and science
+ijats
+international journal of advanced trends in computer applications
+ijatca
+international journal of advancement in engineering technology, management & applied science
+ijaetmas
+international journal of advancements in mechanical and aeronautical engineering
+international journal of advancements in research & technology
+ijoart
+international journal of advances in applied mathematics and mechanics
+ijaamm
+international journal of advances in engineering
+ijae
+international journal of advances in engineering & technology
+ijaet
+international journal of advances in interdisciplinary research
+ijaidr
+international journal of advances in management and economics
+ijame
+international journal of advances in management, economics and entrepreneurship
+ijamee
+international journal of advances in mathematics
+international journal of advances in pharmaceutical research
+international journal of advances in power systems
+ijaps
+international journal of advances in social science and humanities
+international journal of advent research in computer and electronics
+ijarce
+international journal of aerospace and medical engineering
+international journal of agriculture and crop sciences
+international journal of agriculture and environmental research
+ijaer
+international journal of agriculture innovations and research
+international journal of agricultural, forestry & plantation
+ijafp
+international journal of agricultural sciences and veterinary medicine
+ijasvm
+international journal of agronomy & plant production
+international journal of all research education & scientific methods
+ijaresm
+international journal of application or innovation in engineering & management
+ijaiem
+international journal of applied and pure science and agriculture
+ijapsa
+international journal of applied biology and pharmaceutical technology
+ijabpt
+international journal of applied dental sciences
+international journal of applied economic studies
+international journal of applied information systems
+ijias
+international journal of applied linguistics & english literature
+ijalel
+international journal of applied pharmaceutical & biological research
+ijapbr
+international journal of applied pharmaceutical sciences and biological sciences
+ijapsbs
+international journal of applied research
+international journal of applied research & studies
+ijars
+international journal of applied research in natural products
+ijarnp
+international journal of applied science engineering and management
+ijasem
+international journal of applied sciences and biotechnology
+ijasbt
+international journal of applied sciences and engineering
+international journal of architecture, civil engineering and urban design
+ijacu
+international journal of artificial intelligence and mechatronics
+international journal of art and humanity science
+ijahs
+international journal of arts and commerce
+international journal of arts and entrepreneurship
+international journal of arts, humanities and management studies
+ijahms
+international journal of arts humanities and social sciences
+ijahss
+international journal of ayurveda and pharma research
+international journal of ayurveda and pharmaceutical chemistry
+international journal of basic and applied science
+ibjas
+international journal of basic medical sciences and pharmacy
+ijbmsp
+international journal of basic sciences and applied computing
+ijbsac
+international journal of basic sciences and applied research
+ijbsar
+international journal of bio
+ijobio
+international journal of bioassays
+international journal of biological & pharmaceutical research
+ijbpr
+international journal of biological and chemical sciences
+ijbcs
+international journal of biology, pharmacy and allied sciences
+ijbpas
+international journal of biomedical science
+international journal of biosciences and nanosciences
+ijbsans
+international journal of business and administration research review
+ijbarr
+international journal of business and commerce
+international journal of business & management
+international journal of business and management invention
+ijbmi
+international journal of business and social research
+international journal of business management and economic research
+ijbmer
+international journal of business management and economic studies
+ijbmes
+international journal of business marketing and management
+ijbmm
+international journal of business quantitative economics and applied management research
+international journal of business tourism & applied sciences
+international journal of case studies
+international journal of chemical and pharmaceutical sciences
+ijcps
+international journal of chemical science and technology
+ijcst
+international journal of chemical studies
+ijcs
+international journal of civil, mechanical and energy science
+ijcmes
+international journal of clinical and diagnostic research
+ijcdr
+international journal of clinical cases and investigations
+ijcci
+international journal of collaborative research on internal medicine & public health
+ijcrimph
+international journal of commerce and management research
+international journal of communication and health
+international journal of communication networks and information security
+ijcnis
+international journal of comprehensive research in biological sciences
+ijcrbs
+international journal of computation and applied sciences
+ijocaas
+international journal of computational engineering research
+ijcer
+international journal of computational science, mathematics and engineering
+ijcsme
+international journal of computer & electronics research
+international journal of computer & communication engineering research
+ijccer
+international journal of computer and information technology
+ijcit
+international journal of computer applications
+international journal of computer application and engineering technology
+ijcaet
+international journal of computer applications in engineering sciences
+ijcaes
+international journal of computer applications technology and research
+ijcatr
+international journal of computer engineering & applications
+ijcea
+international journal of computer engineering in research trends
+ijcert
+international journal of computer networks and applications
+ijcna
+international journal of computer networks and communications security
+ijcncs
+international journal of computer science & communication security
+ijcscs
+international journal of computer science and business informatics
+international journal of computer science and communication networks
+ijcscn
+international journal of computer science and information security
+international journal of computer science and information technologies
+international journal of computer science and mobile computing
+ijcsmc
+international journal of computer science and network
+ijcsn
+international journal of computer science and network security
+ijcsns
+international journal of computer science and software engineering
+ijcsse
+international journal of computer science and technology
+international journal of computer science and telecommunications
+international journal of computer science engineering
+ijcse
+international journal of computer science engineering and technology
+ijcset
+international journal of computer science, information technology, & security
+ijcsits
+international journal of computer science issues
+international journal of computer science trends and technology
+international journal of computer systems
+international journal of computer technology and applications
+ijcta
+international journal of computer technology and electronics engineering
+ijctee
+international journal of computing academic research
+ijcar
+international journal of computing and corporate research
+ijccr
+international journal of computing science and information technology
+ijcsit
+international journal of conference proceedings
+international journal of contemporary applied sciences
+ijcas
+international journal of contemporary medical research
+ijcmr
+international journal of contemporary research and review
+ijcrr
+international journal of core engineering and management
+ijcem
+international journal of current advanced research
+international journal of current agricultural sciences
+international journal of current business and social sciences
+ijcbss
+international journal of current engineering sciences
+ijces
+international journal of current innovation research
+ijcir
+international journal of current medical and pharmaceutical research
+cmpr
+international journal of current medical sciences
+international journal of current microbiology and applied sciences
+international journal of current multidisciplinary studies
+international journal of current pharmaceutical review and research
+international journal of current research
+international journal of current research and academic review
+ijcrar
+international journal of current research and review
+international journal of current research in chemistry and pharmaceutical sciences
+ijcrcps
+international journal of current research in  life sciences
+ijcrls
+international journal of current research in multidisciplinary
+ijcrm
+international journal of current science
+international journal of current science and technology
+international journal of dental and health sciences
+international journal of dermatopathology and surgery
+ijds
+international journal of development and sustainability
+international journal of development research
+international journal of digital communication and networks
+ijdcn
+international journal of digital library services
+ijodls
+international journal of drug development and research
+ijddr
+international journal of e-computer science evolution
+international journal of economics and finance
+ijef
+international journal of economics and research
+international journal of economics, commerce and management
+ijecm
+international journal of economics, finance and management
+international journal of education and applied research
+ijear
+international journal of education and psychological research
+ijepr
+international journal of education and research
+international journal of education and social science
+ijess
+international journal of educational and psychological assessment
+international journal of educational investigations
+ijei
+international journal of electrical and electronics engineers
+ijeee
+international journal of electrical, electronics and computers
+international journal of electrical, electronics and mechanical controls
+ijeemc
+international journal of electrical energy
+ijoee
+international journal of electrochemical science
+international journal of electronics & communication technology
+iject
+international journal of electronics and information engineering
+ijeie
+international journal of electronics communication and computer engineering
+international journal of electronics communication and computer technology
+ijecct
+international journal of emerging engineering research and technology
+ijeert
+international journal of emerging research in management and technology
+ijermt
+international journal of emerging science and engineering
+ijese
+international journal of emerging sciences
+ijes
+international journal of emerging technologies and innovative research
+jetir
+international journal of emerging technology & research
+ijetr
+international journal of emerging technology and advanced engineering
+international journal of emerging trends in electrical and electronics
+ijetee
+international journal of emerging trends in pharmaceutical sciences
+ijetps
+international journal of emerging trends in research
+ijoetr
+international journal of emerging trends in science and technology
+ijetst
+international journal of energy & technology
+international journal of energy and water resources
+ijewr
+international journal of engineering & science research
+ijesr
+international journal of engineering and advanced research technology
+ijeart
+international journal of engineering and advanced technology
+ijeat
+international journal of engineering and applied sciences
+international journal of engineering and computer science
+ijecs
+international journal of engineering and innovative technology
+ijeit
+international journal of engineering and management research
+ijemr
+international journal of engineering and science
+international journal of engineering and science invention
+ijesi
+international journal of engineering & technology
+ijet
+international journal of engineering and technology
+international journal of engineering applied science and technology
+ijeast
+international journal of engineering associates
+ijea
+international journal of engineering development and research
+international journal of engineering innovations and research
+ijeir
+international journal of engineering inventions
+international journal of engineering maths and computer science
+international journal of engineering research
+international journal of engineering research and applications
+ijera
+international journal of engineering research and computer science
+ijercs
+international journal of engineering research and development
+ijerd
+international journal of engineering research and general science
+ijergs
+international journal of engineering research & management
+ijerm
+international journal of engineering research & science
+ijoer
+international journal of engineering research and science & technology
+ijerst
+international journal of engineering research & technology
+ijert
+international journal of engineering researches and management studies
+ijerms
+international journal of engineering science & advanced technology
+international journal of engineering science and computing
+ijesc
+international journal of engineering science and generic research
+ijesar
+international journal of engineering science and innovative technology
+ijesit
+international journal of engineering, science and technology
+international journal of engineering science invention-research & development
+ijesird
+international journal of engineering sciences & research technology
+ijesrt
+international journal of engineering sciences & management
+ijesmr
+international journal of engineering technologies and management research
+ijetmr
+international journal of engineering technology and computer research
+ijetcr
+international journal of engineering technology and management
+ijetm
+international journal of engineering technology and scientific innovation
+ijetsi
+international journal of engineering technology, management and applied sciences
+ijetmas
+international journal of engineering trends and applications
+ijeta
+international journal of engineering trends and technology
+ijett
+international journal of english and education
+international journal of english language & translation studies
+ij-elts
+international journal of english language , literature & humanities
+ijellh
+international journal of english language, literature and translation studies
+international journal of english research
+international journal of enterprise computing and business systems
+ijecbs
+international journal of environment
+international journal of environmental & agriculture research
+international journal of environment, agriculture and biotechnology
+ijeab
+international journal of environmental science and development
+ijesd
+international journal of farming and allied sciences
+international journal of fauna and biological studies
+ijfbs
+international journal of fisheries and aquatic studies
+international journal of food and nutritional sciences
+ijfans
+international journal of fundamental & applied sciences
+international journal of global communications
+ijgc
+international journal of global ideas
+ijgi
+international journal of governance
+international journal of green and herbal chemistry
+ijghc
+international journal of health research
+international journal of health research in modern integrated medical sciences
+ijhrmims
+international journal of health sciences and research
+international journal of herbal medicine
+international journal of hindi research
+international journal of history, arts and culture
+ijhac
+international journal of home science
+international journal of human resource and procurement
+ijhrp
+international journal of human sciences
+international journal of humanities and cultural studies
+ijhcs
+international journal of humanities and social science invention
+ijhssi
+international journal of humanities and social science research
+international journal of humanities & social studies
+international journal of humanities & social sciences
+jhss
+international journal of humanities and religion
+international journal of humanities, engineering and pharmaceutical sciences
+international journal of indian psychology
+international journal of information and communication technology research
+international journal of information and communication technology trends
+ijictt
+international journal of information and education technology
+ijiet
+international journal of information research
+international journal of information research and review
+ijirr
+international journal of information sources and services
+ijss
+international journal of information technology & business management
+international journal of information technology & computer science
+ijitcs
+international journal of information technology and electrical engineering
+itee
+international journal of informative and futuristic research
+ijifr
+international journal of innovation and research in educational sciences
+ijires
+international journal of innovation in science and mathematics
+ijism
+international journal of innovation research
+ijir
+international journal of innovations in engineering and technology
+international journal of innovations in engineering research and technology
+ijiert
+international journal of innovation science and research
+ijisr
+international journal of innovative and applied research
+ijiar
+international journal of innovative and emerging research in engineering
+ijiere
+international journal of innovative computer science & engineering
+ijicse
+international journal of innovative concepts in research
+ijicr
+international journal of innovative ideas
+international journal of innovative interdisciplinary research
+international journal of innovative pharmaceutical research
+ijipr
+international journal of innovative research & advanced studies
+ijiras
+international journal of innovative research and creative technology
+ijirct
+international journal of innovative research and development
+international journal of innovative research and studies
+international journal of innovative research in advanced engineering
+ijrae
+international journal of innovative research in computer and communication engineering
+ijircce
+international journal of innovative research in electrical, electronics, instrumentation and control engineering
+ijireeice
+international journal of innovative research in computer science & technology
+ijircst
+international journal of innovative research in engineering & multidisciplinary physical sciences
+ijirmps
+international journal of innovative research in engineering and management
+ijirem
+international journal of innovative research in medical science
+ijirms
+international journal of innovative  research in science and engineering
+ijirse
+international journal of innovative research in science, engineering and technology
+ijirset
+international journal of innovative research in technology
+ijirt
+international journal of innovative research in technology & science
+ijirts
+international journal of innovative science engineering and technology
+ijiset
+international journal of innovative science and modern engineering
+ijisme
+international journal of innovative studies in sciences and engineering technology
+ijisset
+international journal of innovative technologies
+ijit
+international journal of innovative technology and exploring engineering
+ijitee
+international journal of innovative technology and research
+international journal of innovative trends in engineering
+ijite
+international journal of integrated computer applications & research
+ijicar
+international journal of integrated medical research
+ijoimr
+international journal of interdisciplinary and multidisciplinary studies
+ijims
+international journal of interdisciplinary research in science, society and culture
+ijirssc
+international journal of interdisciplinary scientific research
+international journal of inventions in pharmaceutical sciences
+ijips
+international journal of inventive engineering and sciences
+ijies
+international journal of knowledge, innovation and entreprenurship
+international journal of language and applied linguistics
+ijlal
+international journal of language learning and applied linguistics world
+international journal of language sciences
+intjls
+international journal of languages, literature and linguistics
+ijlll
+international journal of latest research in engineering and computing
+ijlrec
+international journal of latest research in engineering and technology
+ijlret
+international journal of latest technology in engineering, management & applied science
+ijltemas
+international journal of latest trends in engineering and technology
+ijltet
+international journal of latest trends in engineering, science and technology
+ijltest
+international journal of law and legal jurisprudence studies
+ijlljs
+international journal of law and management studies
+ijlms
+international journal of law research
+international journal of learning, teaching and educational research
+international journal of liberal arts & social science
+international journal of life science and pharma research
+international journal of life sciences biotechnology and pharma research
+ijlbpr
+international journal of life-sciences scientific research
+ijlssr
+international journal of linguistics, social and natural sciences
+international journal of livestock research
+international journal of management
+international journal of management, accounting & economics (ijmae)
+ijma
+international journal of management and business studies
+ijmbs
+international journal of management and research
+ijmr
+international journal of management and social science research review
+ijmsrr
+international journal of management, economics and social sciences
+ijmess
+international journal of management research and business strategy
+ijmrbs
+international journal of management research and review
+ijmrr
+international journal of management sciences and business research
+ijmsbr
+international journal of mathematical archive
+international journal of mathematical research & science
+international journal of mathematical sciences & applications
+ijmsa
+international journal of mathematics and computer research
+ijmcr
+international journal of mathematics and soft computing
+ijmsc
+international journal of mathematics and statistics invention
+ijmsi
+international journal of mechanical engineering and information technology
+international journal of medical and health research
+ijmhr
+international journal of medical and health sciences
+international journal of medical research
+international journal of medical research & health sciences
+ijmrhs
+international journal of medical research & review
+international journal of medical research and pharmaceutical sciences
+international journal of medical research professionals
+ijmrp
+international journal of medical science and education
+ijmse
+international journal of medical science and public health
+ijmsph
+international journal of medical science research and practice
+ijmsrp
+international journal of medical sciences and health care
+ijmshc
+international journal of medical students
+ijms
+international journal of medicine and biosciences
+international journal of medicobiologial research
+international journal of medipharm research
+ijomr
+international journal of modern chemistry and applied science
+international journal of modern engineering research
+ijmer
+international journal of modern sciences and engineering technology
+ijmset
+international journal of mosquito research
+international journal of multidisciplinary and current research
+international journal of multidisciplinary and scientific emerging research
+international journal of multidisciplinary education and research
+international journal of multidisciplinary educational research
+international journal of multidisciplinary health sciences
+international journal of multidisciplinary research and development
+international journal of multidisciplinary research and information
+international journal of multidisciplinary research and modern education
+international journal of multidisciplinary research and review
+international journal of multidisciplinary research review
+ijmdrr
+international journal of multidisciplinary sciences and engineering
+international journal of nanofluids and nanoparticles
+international journal of network security
+ijns
+international journal of network service and technologies
+ijnst
+international journal of new innovations in engineering and technology
+ijniet
+international journal of new technologies in science and engineering
+ijntse
+international journal of new technology and research
+international journal of new trends in arts, sports & science education
+ijtase
+international journal of novel trends in pharmaceutical sciences
+ijntps
+international journal of nursing
+international journal of obstetrics and gynaecology research
+ijogr
+international journal of oral health and medical research
+ijohmr
+international journal of oncology science
+ijos
+international journal of orthopaedics sciences
+international journal of pediatrics
+international journal of pharma and bio sciences
+ijpbs
+international journal of pharma professional's research
+international journal of pharmaceutical & research science
+international journal of pharmaceutical and biological science archive
+ijpba
+international journal of pharmaceutical and biomedical research
+international journal of pharmaceutical and clinical research
+international journal of pharmaceutical and phytopharmacological research
+eijppr
+international journal of pharmaceutical quality assurance and pharmaceutical analysis
+international journal of pharmaceutical research and applications
+ijpra
+international journal of pharmaceutical research and bioscience
+ijprbs
+international journal of pharmaceutical research and development
+ijprd
+international journal of pharmaceutical science invention
+ijpsi
+international journal of pharmaceutical sciences and business management
+international journal of pharmaceutical sciences and drug research
+international journal of pharmaceutical sciences and research
+international journal of pharmaceutical sciences letters
+ijpsl
+international journal of pharmaceutical sciences review and research
+international journal of pharmaceuticals and health care research
+ijphr
+international journal of pharmacognosy
+ijp
+international journal of pharmacognosy and phytochemical research
+ijppr
+international journal of pharmacology and physiology
+ijpp
+international journal of pharmacy
+international journal of pharmacy & industrial research
+ijpir
+international journal of pharmacy and pharmaceutical research
+international journal of pharmacy and pharmaceutical sciences
+international journal of pharmacy and technology
+ijpt
+international journal of physical education, sports and health
+international journal of physiotherapy
+ijphy
+international journal of plant, animal and environmental sciences
+international journal of power electronics engineering
+international journal of precious engineering research and applications
+ijpera
+international journal of printing, packaging & allied sciences
+ijppas
+international journal of psycho-educational sciences
+international journal of psychology and behavioral research
+international journal of psychology and educational studies
+ijpes
+international journal of pure & applied bioscience
+ijpab
+international journal of pure and applied zoology
+ijpaz
+international journal of research granthaalayah
+international journal of recent advances in multidisciplinary research
+ijramr
+international journal of recent development in engineering and technology
+ijrdet
+international journal of recent engineering research and development
+ijrerd
+international journal of recent research and applied studies
+ijrras
+international journal of recent research in science, engineering and technology
+ijrrset
+international journal of recent scientific research
+international journal of recent surgical and medical sciences
+ijrsms
+international journal of recent technology and engineering
+ijrte
+international journal of recent trends in electrical & electronics engineering
+international journal of recent trends in engineering & research
+ijrter
+international journal of remote sensing and geoscience
+ijrsg
+international journal of renewable energy research
+ijrer
+international journal of research and current development
+ijrcd
+international journal of research and development in pharmacy & life sciences
+ijrdpl
+international journal of research and development in technology & management sciences kailash
+ijrdtm-kailash
+international journal of research and engineering
+ijre
+international journal of research and innovation in computer engineering
+ijrice
+international journal of research and science publication
+ijrsp
+international journal of research culture society
+ijrcs
+international journal of research development
+ijord
+international journal of research in advanced engineering and technology
+international journal of research in advanced engineering technologies
+ijraet
+international journal of research in aeronautical and mechanical engineering
+ijrame
+international journal of research in agricultural sciences
+ijras
+international journal of research in agriculture and forestry
+ijraf
+international journal of research in ayurveda and pharmacy
+international journal of research in business studies and management
+ijrbsm
+international journal of research in computer and communication technology
+international journal of research in computer engineering & electronics
+ijrcee
+international journal of research in computer science
+international journal of research in computer technology
+international journal of research in education and science
+international journal of research in education and social science
+ijress
+international journal of research in electronics & communication technology
+ijrect
+international journal of research in engineering and advanced technology
+ijreat
+international journal of research in engineering and science
+ijres
+nternational journal of research in engineering and science
+ijreas
+international journal of research in engineering and technology
+ijret
+international journal of research in humanities and social sciences
+ijrhss
+international journal of research in library science
+ijrls
+international journal of research in management & business studies
+ijrmbs
+international journal of research in mechanical engineering and technology
+ijrmet
+international journal of research in medical & applied sciences
+ijrmas
+international journal of research in medical and dental sciences
+international journal of research in pharmacy and biosciences
+international journal of research in pharmacy and science
+ijrps
+international journal of research in science & engineering
+ijrise
+international journal of research in science & technology
+ijrst
+international journal of research in wireless systems
+ijrws
+international journal of research methodology
+ijrm
+international journal of research publications in engineering and technology
+ijrpet
+international journal of research science and management
+ijrsm
+international journal of review in applied and social sciences
+ijrass
+international journal of review in life sciences
+international journal of reviews in computing
+international journal of reviews, surveys and research
+ijrsr
+international journal of sanskrit research
+international journal of science and advanced technology
+ijsat
+international journal of science & engineering development research
+ijsdr
+international journal of science and engineering applications
+ijsea
+international journal of science and engineering investigations
+ijsei
+international journal of science & technoledge
+international journal of science and research
+international journal of science and research methodology
+ijsrm
+international journal of science and technology
+international journal of science & technology
+ijst
+international journal of science commerce and humanities
+ijsch
+international journal of science culture and sport
+intjscs
+international journal of science engineering and advance technology
+ijseat
+international journal of science, engineering and technology research
+ijsetr
+international journal of science environment and technology
+international journal of science innovations and discoveries
+international journal of science technology and engineering
+international journal of science technology & management
+ijstm
+international journal of sciences
+ijsciences
+international journal of sciences and applied research
+ijsar
+international journal of scientific & technology research
+ijstr
+international journal of scientific and engineering research
+ijser
+international journal of scientific and research
+international journal of scientific and research publications
+ijsrp
+international journal of scientific and technical advancements
+ijsta
+international journal of scientific engineering and applied science
+ijseas
+international journal of scientific engineering and technology
+international journal of scientific engineering and technology research
+international journal of scientific progress & research
+ijspr
+international journal of scientific research
+ijscr
+international journal of scientific research & management studies
+ijsrms
+international journal of scientific research and application
+international journal of scientific research and education
+ijsre
+international journal of scientific research and engineering trends
+ijsret
+international journal of scientific research and innovative technology
+ijsrit
+international journal of scientific research and management
+international journal of scientific research in education
+international journal of scientific research in information systems and engineering
+ijsrise
+international journal of scientific study
+international journal of signal processing systems
+ijsps
+international journal of social and applied sciences
+international journal of social science & economic research
+ijsser
+international journal of social science and humanity
+ijssh
+international journal of social sciences
+tijoss
+international journal of social sciences and education
+ijsse
+international journal of social sciences and entrepreneurship
+international journal of society and technology
+international journal of society, culture & language
+ijscl
+international journal of soft computing and engineering
+international journal of sport studies
+oida international journal of sustainable development
+international journal of teacher educational research
+ijter
+international journal of technical research and applications
+ijtra
+international journal of technical research and innovation
+ijtri
+international journal of technology and computing
+ijtc
+international journal of technology, education, and resource management
+ijterm
+international journal of technology enhancements and emerging engineering research
+ijteee
+international journal of technology, management and humanities
+ijtmh
+international journal of therapeutic applications
+ijta
+international journal of toxicological and pharmacological research
+international journal of trend in research and development
+ijtrd
+international journal of trends in economics management and technology
+ijtemt
+international journal of universal pharmacy and bio sciences
+ijupbs
+international journal of veterinary science
+international journal of wind and renewable energy
+ijwre
+international journal of wisdom based computing
+international journal of world research
+international journal on recent and innovation trends in computing and communication
+ijritcc
+international journal on recent technologies in mechanical and electrical engineering
+ijrmee
+international journal on recent trends in life science and mathematics
+ijrtlsm
+international journal on research methodologies in physics and chemistry
+ijrmpc
+international journal online of humanities
+ijohmn
+international letters of chemistry, physics and astronomy
+international letters of natural sciences
+international letters of social and humanistic sciences
+international multidisciplinary research journal
+international multispeciality journal of health
+international online journal of primary education
+iojpe
+international proceedings of chemical, biological and environmental engineering
+ipcbee
+international refereed journal of architecture and design
+international refereed journal of engineering and science
+irjes
+international research and publications in medical sciences
+irpms
+international research journal of advanced engineering in frontiers
+irjef
+international research journal of applied and basic sciences
+irjabs
+international research journal of applied finance
+international research journal of engineering and technology
+irjet
+international research journal of finance and economics
+international research journal of management sciences
+irjms
+international research journal of multidisciplinary science & technology
+irjmrs
+international research journal of pharmaceutical and applied sciences
+irjpas
+international research journal of pharmaceutical sciences
+irjps
+international research journal of pharmacy
+irjp
+international research journal of sustainable science & engineering
+irjsse
+international researchers
+international review of basic and applied sciences
+irbas
+international review of management and business research
+irmbr
+international review of social sciences and humanities
+international science and investigation journal
+isij
+international scientific investigations
+international scientific journal theoretical & applied science
+international scientific research journal
+irj.science
+international technical sciences journal
+itsj
+invention journal of research technology in engineering & management
+ijrtem
+iosr journal of engineering
+italian journal of science & engineering
+jacotech
+jai maa saraswati gyandayini
+journal of accounting, ethics & public policy
+journal de afrikana
+journal der pharmazie forschung
+rapsr
+journal for research
+journal francophone de cas clinique
+journal of academic social science studies
+jasss
+journal of advanced agricultural technologies
+joaat
+journal of advanced studies in agricultural, biological and environmental sciences
+jabe
+journal of advanced veterinary and animal research
+javar
+journal of advances in civil engineering
+jace
+journal of advances in electronics and communication engineering
+jaece
+journal of advances in information technology
+jait
+journal of advances in internal medicine
+journal of advances in science and technology
+jadbm
+journal of advances in social science and humanities
+journal of agriculture, forestry & environmental sciences
+journal of american academic research
+jaar
+journal of american academy of business, cambridge
+journal of american business review, cambridge
+journal of american physicians and surgeons
+jpands
+journal of anaesthesia and critical care case reports
+journal of analytical research
+journal of animal and plant sciences
+journal of animal and poultry sciences
+japsc
+journal of applicable chemistry
+journal of applied biology & biotechnology
+jabb
+journal of applied economics and business
+journal of applied linguistics and language research
+jallr
+journal of applied linguistics (dubai)
+journal of applied management and investments
+jami
+journal of applied pharmacy
+journal of applied pharmaceutical science
+journal of arts and humanities
+journal of automation and control engineering
+joace
+journal of ayurveda and integrated medical sciences
+jaims
+journal of ayurveda and holistic medicine
+jahm
+journal of basic and environmental sciences
+jbes
+journal of behavioral health
+journal of behavioral sciences in asia
+journal of bio innovation
+journal of biological and scientific opinion
+jbso
+journal of biological sciences and medicine
+jbsm
+journal of biomedical and pharmaceutical research
+jbpr
+journal of bioscience and technology
+jbst
+journal of biospectracal
+journal of business management and applied economics
+journal of business management and economic studies
+jbmes
+journal of business studies quarterly
+jbsq
+journal of chemical and pharmaceutical research
+journal of chemical and pharmaceutical sciences
+journal of chemical, biological and physical sciences
+jcbpsc
+journal of clean energy technologies
+jocet
+journal of clinical and analytical medicine
+jcam
+journal of communications technology, electronics and computer science
+jctecs
+journal of computers
+journal of computing
+journal of computing technologies
+jct
+journal of contemporary issues in business research
+journal of contemporary management sciences
+jcms
+journal of contemporary medical education
+journal of coastal life medicine
+journal of cosmology
+journal of current pharma research
+journal of current research in science
+jcrs
+journal of current trends in big data analytics
+journal of drug discovery and therapeutics
+jddt
+journal of economics and banking
+journal of economics and engineering
+journal of economics and political economy
+journal of economics, business and management
+joebm
+journal of education and social science
+journal of education and sociology
+journal of elt and applied linguistics
+jeltal
+journal of electrical engineering
+journal of electrical engineering and science
+jees
+journal of emerging trends in computing and information sciences
+journal of english language and literature
+joell
+journal of engineering and applied mathematics
+jeam
+journal of engineering innovation & research
+jeir
+journal of entomology and zoology studies
+journal of environment and life sciences
+jels
+journal of environmental and occupational science
+journal of environmental biology
+journal of environmental hydrology
+journal of environmental nanotechnology
+journal of environmental research and development
+jerad
+journal of environmental science, computer science and engineering & technology
+jecet
+journal of evidence based medicine and healthcare
+jebmh
+journal of evolution of research in dermatology and venerology
+jerdv
+journal of evolution of research in human physiology
+jerph
+journal of evolution of research in medical microbiology
+jermm
+journal of evolution of research in medical pharmacology
+jermp
+journal of evolution of research in paediatrics and neonatology
+jerpn
+journal of excellence in computer science and engineering
+jecse
+journal of experimental biology and agricultural sciences
+jebas
+journal of experimental sciences
+journal of financial education
+journal of food, agriculture and environment
+jfae
+journal of fundamental and applied sciences
+journal of genetic and environmental resources conservation
+jgerc
+journal of geotechnical and transportation engineering
+journal of global biosciences
+journal of global business management
+journal of global innovations in agricultural and social sciences
+jgiass
+journal of global research in computer science
+jgrcs
+journal of health economics and outcomes research
+jheor
+journal of health, sport and tourism
+journal of herbmed pharmacology
+jhp
+journal of human resource and adult learning
+journal of humanities and cultural studies r&d
+journal of hydrology and environment research
+jher
+journal of imab
+journal of industrial and intelligent information
+jiii
+journal of information management
+jim
+journal of innovations in applied pharmaceutical science
+jiaps
+journal of innovations in pharmaceuticals and biological sciences
+jipbs
+journal of innovative biology
+jib
+journal of innovative engineering
+journal of innovative research and solutions
+jiras
+journal of intercultural ethnopharmacology
+journal of interdisciplinary histopathology
+journal of international academic research for multidisciplinary
+jiarm
+journal of international anatolia sport science
+journal of international environmental application & science
+journal of international management studies
+journal of internet banking and commerce
+journal of investigational biochemistry
+journal of knowledge management, economics and information technology
+journal of language and literature
+journal of law and ethics
+journal of materials and environmental science
+jmes
+journal of mathematics and computer science
+jmcs
+journal of mathematics and technology
+journal of media & mass communication
+journal of media critiques
+jmc
+journal of medical science and technology
+journal of molecular pathophysiology
+journal of nano innovation
+journal of natural products
+journal of novel applied sciences
+journal of medical biomedical and applied sciences
+journal of medical pharmaceutical and allied sciences
+jmpas
+journal of medical research
+journal of medical research and practice
+jmrp
+journal of medical science and clinical research
+jmscr
+plants journal / journal of medicinal plants studies
+journal of middle east and north africa sciences
+journal of middle east applied science and technology
+jmeast
+journal of microbiology and antimicrobial agents
+jmaa
+journal of modern science & heritage
+journal of modern science and technology
+journal of multidisciplinary developments
+jomude
+journal of multidisciplinary engineering science and technology
+jmest
+journal of multidisciplinary engineering science studies
+jmess
+journal of nature and science
+jnsci
+journal of neurology & neuromedicine
+journal of new sciences
+journal of nonlinear science and applications
+jnsa
+journal of pharmaceutical and bioanalytical science
+journal of pharmaceutical and biological sciences
+jpabs
+journal of pharmaceutical and biomedical sciences
+jpbms
+journal of pharmaceutical and scientific innovation
+jpsi
+journal of pharmaceutical, chemical and biological sciences
+jpcbs
+journal of pharmacognosy and phytochemistry
+journal of pharmacy practice and community medicine
+journal of pharmacy research
+jpr
+journal of physical education research
+joper
+journal of physical therapy science
+jpts
+journal of psychology and theology
+journal of postharvest technology
+journal of process management new technologies international
+jpmnt
+journal of rare diseases research & treatment
+journal of reading and literacy
+jrl
+journal of research in anaesthesology and pain medicine
+jrap
+journal of research in biology
+journal of research in computers and technology
+jrct
+journal of research in forensic medicine and toxicology
+jrfmt
+journal of research in general surgery and laparoscopy
+jegsl
+journal of research in human anatomy and embryology
+jrhae
+journal of research in obstetrics, gynaecology and infertility
+jrogi
+journal of research in preventive and social medicine
+jrpsm
+journal of research in psychiatry and behavioural sciences
+jrpbs
+journal of research in radiodiagnosis, teleradiology and imaging
+jrrti
+journal of research in traditional medicine
+jrtm
+journal of science
+journal of science and its applications
+josaia
+journal of science and technology advances
+journal of science editing
+journal of scientific and engineering research
+journal of scientific letters
+journal of scientific research and development
+journal of scientific research in pharmacy
+jsrp
+journal of scientific research in physical & mathematical sciences
+journal of scientific theory and methods
+journal of social issues & humanities
+journal of software
+jsw
+journal of spectroscopy and molecular physics
+journal of studies in social sciences and humanities
+jsssh
+journal of surgery & patient care
+journal of telecommunications
+journal of the international association of advanced technology and science
+jiaats
+journal of theoretical and applied information technology
+jatit
+journal of trends in the development of machinery and associated technology
+jundishapur journal of health sciences
+jjhs
+junior scientific researcher
+kashmir economic review
+langlit
+lecture notes on software engineering
+lnse
+legal research development
+lrd
+letters in applied nanobioscience
+libri: linguistic and literary broad research and innovation
+lingua: international journal of linguistics, literature and culture
+lokavishkar international e-journal
+macrotheme review
+malti: international hindi e-research journal
+mathematical and computational applications
+mca
+mechanics, materials science & engineering journal
+medical research archives
+medico research chronicles
+mediterranean journal of biosciences
+mjb
+mediterranean journal of chemistry
+mediterranean journal of modeling & simulation
+mediterranean journal of physics
+medlife clinics
+modern behavioral science
+modern journal of applied linguistics
+mjal
+modern journal of language teaching methods
+mjltm
+multidisciplinary scientific reviewer
+munis entomology & zoology
+nanoworld journal
+nwj
+national journal of basic medical sciences
+national journal of community medicine
+national journal of medical and dental research
+national journal of physiology, pharmacy, and pharmacology
+norwegian journal of development of the international science
+oncoscience
+oncotarget
+online international interdisciplinary research journal
+online journal of communication and media technologies
+online journal of distance education and e-learning
+tojdel
+online journal of library & information science
+ojlis
+online journal of new horizons in education
+tojned
+online journal of science and technology
+tojsat
+open access journal of science and technology
+open journal of clinical & medical sciences
+open journal of clinical & medical case reports
+oriental journal of computer science and technology
+paripex indian journal of research
+pijr
+path of science
+pattern recognition in physics
+people's journal of scientific research
+pharma innovation
+pharma research (journal)
+pharmaceutical and biological evaluations
+pharmaceutical and chemical journal
+pharmacie globale: international journal of comprehensive pharmacy
+ijcp
+pharmacognosy: journal of pharmacognosy and phytochemistry
+pharmacologia
+pharmacologyonline
+phol
+pharmanest: an international journal of advances in pharmaceutical sciences
+physical education and sports research journal
+plant digest
+professionals center for business research
+progress in physics
+pyxis journal
+punarnav
+quarterly physics review
+reef resources assessment and management technical paper
+remedy open access
+research
+research ambition
+research chronicler
+research chronicles
+research dimension
+research directions
+research in biotechnology
+research in pharmacy and health sciences
+research innovator
+research inspiration
+research inventy: international journal of engineering and science
+research journal of life sciences, bioinformatics, pharmaceutical, and chemical sciences
+rjlbpcs
+research journal of pharmaceutical, biological and chemical sciences
+rjpbcs
+research opinions in animal and veterinary sciences
+roavs
+research revolution
+research scholar
+researchdesk
+researchers world -- journal of arts science & commerce
+review of research
+reviews of progress
+revista electrónica de las ciencias computacionales e informática
+reci
+revista iberoamericana de ciencas
+revista iberoamericana de contaduría, economía y administración
+ricea
+revista iberoamericana de las ciencias biológicas y agropecuarias
+ciba
+revista iberoamericana de las ciencias de la salud
+rics
+revista iberoamericana de las ciencias sociales y humanísticas
+ricsh
+revista iberoamericana para la investigación y el desarrollo educativo
+ride
+romanian biotechnological letters
+sanskruti international multidisciplinary research journal
+simrj
+scholarly research exchange
+scholars world- international refereed multidisciplinary journal of contemporary research
+science and engineering applications
+saea
+science international
+science international (lahore)
+science park
+science postprint
+spp
+science research reporter
+science reuters
+scientific light
+scientific research journal
+scirj
+scientific research journal of india
+scientific researches
+scientific transactions in environment and technovation
+scientific world
+scitech journal
+scottish journal of arts, social sciences and scientific studies
+sjass
+scro annual report journal
+sensors & transducers journal
+seventh sense research group journal
+shiraz e-medical journal
+shiv rudraksha international journal of advanced research in engineering & management
+smart & young
+smart nanosystems in engineering and medicine
+south asian journal of food technology and environment
+south asian journal of mathematics
+south indian journal of biological sciences
+south pacific journal of technology and science
+spjts
+south pacific journal of pharma and bio sciences
+spjpbs
+sport science
+swedish journal of scientific research
+sjsr
+swiss journal of research in business and social science
+sjrbss
+tactful management research journal
+tmrj
+technical journal of engineering and applied sciences
+tjeas
+technics technologies education management
+tehnički vjesnik
+tv-tg
+translational medicine and biotechnology
+tmb
+transnational journal of science and technology
+tjst
+transworld medical journal
+twmj
+trends journal of sciences research
+tjsr
+tropical plant research
+turkish journal of scientific research
+turkish online journal of educational technology
+tojet
+ultra engineer
+ulutas genetic research journal
+ulutas medical journal
+universal journal of applied computer science and technology
+universal journal of computer science and engineering technology
+unicse
+universal journal of pharmaceutical research
+ujpr
+universal journal of pharmacy
+universe of emerging technology and science
+uniets
+visi jurnal akademik
+weberbauerella
+weekly science international research journal
+world academy of informatics and management sciences
+waims
+world applied sciences journal
+world essays journal
+wej
+world journal of innovative research
+wjir
+world journal of engineering research and technology
+wjert
+world journal of pharmaceutical and medical research
+wjpmr
+world journal of pharmaceutical and life sciences
+wjpls
+world journal of pharmaceutical research
+wjpr
+world journal of pharmaceutical sciences
+wjps
+world journal of pharmacy and pharmaceutical sciences
+wjpps
+world journal of research and review
+wjrr
+world journal of science and technology
+wjst
+world medical student journal
+worldmsj
+world scientific news
+world wide journal of multidisciplinary research and development

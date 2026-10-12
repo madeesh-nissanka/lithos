@@ -3,6 +3,7 @@
 Base adapter class and registry for multi-source retrieval.
 """
 from __future__ import annotations
+from lithos._version import VERSION
 import logging
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
@@ -46,7 +47,7 @@ class BaseAdapter(ABC):
         rate_limiter = RateLimiter(requests_per_second=self.config.rate_limit, burst=self.config.burst)
         retry_policy = RetryPolicy(max_attempts=self.config.max_retries)
         polite_pool = PolitePool(self.config.polite_email)
-        return HTTPClient(rate_limiter, retry_policy, polite_pool, self.name, "0.2.0", self.config.timeout)
+        return HTTPClient(rate_limiter, retry_policy, polite_pool, self.name, VERSION, self.config.timeout)
 
     @property
     def enabled(self) -> bool:

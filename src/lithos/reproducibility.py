@@ -3,6 +3,7 @@
 Reproducibility module for LITHOS - run manifest, caching, resume, ledger.
 """
 from __future__ import annotations
+from lithos._version import VERSION
 import hashlib
 import json
 import logging
@@ -163,7 +164,7 @@ def create_run_manifest(
     """Create a new run manifest."""
     return RunManifest(
         run_id=run_id,
-        lithos_version="0.2.0",
+        lithos_version=VERSION,
         python_version=f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}",
         started_at=datetime.now(timezone.utc).isoformat(),
         config_hash=hashlib.sha256(json.dumps(parameters, sort_keys=True).encode()).hexdigest()[:16],

@@ -3,6 +3,7 @@
 HTTP client with rate limiting, retries, and polite pool support.
 """
 from __future__ import annotations
+from lithos._version import VERSION
 import json
 import logging
 import os
@@ -85,7 +86,7 @@ class HTTPClient:
         retry_policy: Optional[RetryPolicy] = None,
         polite_pool: Optional[PolitePool] = None,
         tool_name: str = "lithos",
-        version: str = "0.2.0",
+        version: str = VERSION,
         default_timeout: int = 30,
     ):
         self.rate_limiter = rate_limiter or RateLimiter()
@@ -130,6 +131,32 @@ class HTTPClient:
                 with urllib.request.urlopen(req, timeout=timeout or self.default_timeout) as response:
                     data = response.read()
                     return json.loads(data)
+            except Exception as e:
+                last_error = e
+                if not self._should_retry(attempt, e):
+                    break
+                delay = self.retry_policy.get_delay(attempt)
+                logger.warning(f"Request failed (attempt {attempt+1}/{self.retry_policy.max_attempts}): {e}. Retrying in {delay:.1f}s")
+                time.sleep(delay)
+                attempt += 1
+
+        logger.error(f"Request failed after {attempt+1} attempts: {last_error}")
+        raise last_error
+
+    def get_bytes(self, url: str, params: Optional[dict] = None, timeout: Optional[int] = None) -> bytes:
+        """GET request returning raw bytes (for PDF/HTML/XML payloads)."""
+        if params:
+            separator = "&" if "?" in url else "?"
+            url += separator + urllib.parse.urlencode(params)
+
+        attempt = 0
+        last_error = None
+        while True:
+            self.rate_limiter.acquire()
+            try:
+                req = self._build_request(url, headers={"Accept": "application/pdf, text/html, application/xml;q=0.9, */*;q=0.8"})
+                with urllib.request.urlopen(req, timeout=timeout or self.default_timeout) as response:
+                    return response.read()
             except Exception as e:
                 last_error = e
                 if not self._should_retry(attempt, e):

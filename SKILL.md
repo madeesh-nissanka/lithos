@@ -1,13 +1,13 @@
-# LITHOS v0.2.0 - Skill for LLM Agents
+# LITHOS v0.3.0 - Skill for LLM Agents
 
 ## Overview
 LITHOS is a literature retrieval and source validation tool for scoping and systematic reviews. It provides multi-source search, deduplication, validation, screening, and reporting capabilities.
 
 ## Installation
 ```bash
-pip install "lithos[all]"  # with optional extras (excel, plots, docx, yaml)
+pip install "lithos[all]"       # with optional extras (excel, plots, docx, yaml, semantic)
 # or
-pip install lithos  # core only (Python standard library)
+pip install lithos              # core only (Python standard library)
 ```
 
 ## Quick Start (CLI)
@@ -21,6 +21,21 @@ lithos search --query "slope stability" --query "factor of safety slope" --from-
 # Emit a domain preset, then search from it
 lithos presets --domain civil --name soil_consolidation -o profile.json
 lithos search --profile profile.json --out results/
+
+# Two-reviewer screening with agreement stats
+lithos screen --input results/records.json --reviewers Alice Bob --export-forms --out results/
+# ... fill forms: screen_form_Alice.csv, screen_form_Bob.csv ...
+lithos screen --input results/records.json --import-decisions Alice=screen_form_Alice.csv --import-decisions Bob=screen_form_Bob.csv --agreement --out results/
+
+# Fetch open-access full texts for full-text screening
+lithos fetch-text --input results/records.json --out fulltext/
+lithos screen --input results/records.json --full-text-dir fulltext/ --rules my_rules.json --out results/
+
+# Generate offline HTML screening dashboard
+lithos dashboard --input results/records.json --out dashboard.html
+
+# Run measured validation benchmark
+lithos benchmark --out benchmark_results/
 
 # Generate reports from existing results
 lithos report --input results/records.json --prisma --search-report --evidence-maps --out reports/
@@ -106,7 +121,36 @@ Apply screening rules.
 - `--threshold`: Keyword score threshold (default: 0.5)
 - `--tfidf-query`: TF-IDF query for relevance ranking
 - `--tfidf-top-k`: Top K for TF-IDF auto-include (default: 50)
+- `--ranker`: `tfidf` (default) or `semantic` (needs `lithos[semantic]`)
+- `--model`: Sentence-transformers model name for `--ranker semantic`
+- `--full-text-dir`: Directory from `lithos fetch-text` to screen on full text
 - `--two-reviewer-export`: Export two-reviewer format
+- `--reviewers`: Reviewer names (two for agreement stats)
+- `--export-forms`: Write per-reviewer CSV screening forms
+- `--import-decisions`: Import filled reviewer decisions (NAME=file.csv, repeatable)
+- `--agreement`: Compute Cohen's kappa + conflict list
+- `--out`, `-o`: Output directory
+
+### `lithos fetch-text`
+Fetch open-access full texts (Europe PMC / Unpaywall), cached and polite.
+- `--input`, `-i`: Input records JSON file
+- `--out`, `-o`: Output directory (cache + texts + index)
+- `--limit`: Max records to attempt
+- `--force`: Ignore cache and refetch
+- `--no-unpaywall`: Do not query Unpaywall (Europe PMC only)
+
+### `lithos dashboard`
+Generate a self-contained offline HTML screening dashboard.
+- `--input`, `-i`: Input records JSON file
+- `--rules`: Screening rules JSON (used for suggested reasons)
+- `--reviewer`: Default reviewer name
+- `--out`, `-o`: Output HTML file
+- `--dataset-id`: Stable id for browser-local decisions
+
+### `lithos benchmark`
+Run measured screening validation on the synthetic benchmark.
+- `--input`: Optional benchmark JSON file (default: built-in soil consolidation)
+- `--top-k`: BM25 top-k for auto-include
 - `--out`, `-o`: Output directory
 
 ### `lithos export`
@@ -140,7 +184,7 @@ Show current adapter configuration.
 ## Configuration
 Create a `lithos.yaml` or `lithos.json` config file:
 ```yaml
-polite_email: "reviewer@example.org"
+polite_email: "<your-email>"
 openalex:
   enabled: true
   rate_limit: 10

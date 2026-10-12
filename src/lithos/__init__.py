@@ -43,7 +43,9 @@ def __getattr__(name: str):
     raise AttributeError(f"module 'lithos' has no attribute {name!r}")
 
 
-__version__ = "0.2.0"
+from lithos._version import VERSION
+
+__version__ = VERSION
 __author__ = "Madeesh P. Nissanka"
 __license__ = "MIT"
 __all__ = [

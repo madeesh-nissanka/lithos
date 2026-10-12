@@ -4,20 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lithos"
-version = "0.2.0"
+version = "0.3.0"
 description = "Literature Retrieval and Source Validation for Scoping Reviews"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [{ name = "Madeesh P. Nissanka" }]
 requires-python = ">=3.10"
 dependencies = []
-optional-dependencies = {
-    "excel" = ["openpyxl>=3.1"],
-    "plots" = ["matplotlib>=3.8"],
-    "docx" = ["python-docx>=1.1"],
-    "yaml" = ["PyYAML>=6.0"],
-    "all" = ["openpyxl>=3.1", "matplotlib>=3.8", "python-docx>=1.1", "PyYAML>=6.0"],
-}
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
@@ -29,12 +22,23 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Information Analysis",
 ]
 
+[project.optional-dependencies]
+excel = ["openpyxl>=3.1"]
+plots = ["matplotlib>=3.8"]
+docx = ["python-docx>=1.1"]
+yaml = ["PyYAML>=6.0"]
+semantic = ["sentence-transformers>=2.2"]
+all = ["openpyxl>=3.1", "matplotlib>=3.8", "python-docx>=1.1", "PyYAML>=6.0", "sentence-transformers>=2.2"]
+
 [project.scripts]
 lithos = "lithos.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 include = ["lithos*"]
+
+[tool.setuptools.package-data]
+"lithos" = ["data/*.txt"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

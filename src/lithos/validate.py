@@ -15,28 +15,29 @@ from lithos.models import Record, RecordStatus, ValidationResult
 
 logger = logging.getLogger(__name__)
 
-# Default predatory venue list (configurable)
-DEFAULT_PREDATORY_VENUES = [
-    # These are example patterns - in practice load from a curated list
-    "international journal of advanced research",
-    "universal journal of",
-    "global journal of",
-    "american journal of",
-    "british journal of",
-    "european journal of",
-    "journal of multidisciplinary",
-    "journal of current",
-    "journal of advanced",
-    "journal of innovative",
-    "journal of emerging",
-    "international journal of current",
-    "international journal of innovative",
-    "international journal of emerging",
-    "world journal of",
-    "asian journal of",
-    "journal of scientific",
-    "journal of modern",
+
+def _load_packaged_predatory_list(filename: str) -> list[str]:
+    """Load a curated, sourced venue list shipped in the package."""
+    path = Path(__file__).resolve().parent / "data" / filename
+    if not path.exists():
+        return []
+    return [
+        line.strip().lower()
+        for line in path.read_text(encoding="utf-8").splitlines()
+        if line.strip() and not line.startswith("#")
+    ]
+
+
+# Default predatory venue list: curated snapshot of Beall's List (archived mirror),
+# shipped in src/lithos/data/*.txt with source/commit/retrieval notes in the file header.
+# Override with --predatory-list / ValidationConfig.predatory_venue_list.
+DEFAULT_PREDATORY_FILES = [
+    "bealls_publishers_2016.txt",
+    "bealls_standalone_journals_2017.txt",
 ]
+DEFAULT_PREDATORY_VENUES = sorted(
+    {entry for f in DEFAULT_PREDATORY_FILES for entry in _load_packaged_predatory_list(f)}
+)
 
 
 @dataclass

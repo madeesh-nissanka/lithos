@@ -38,7 +38,7 @@ class TestCreateRunManifest(unittest.TestCase):
         )
 
         self.assertEqual(manifest.run_id, "test-run-1")
-        self.assertEqual(manifest.lithos_version, "0.2.0")
+        from lithos._version import VERSION as _V; self.assertEqual(manifest.lithos_version, _V)
         self.assertTrue(manifest.python_version)
         self.assertTrue(manifest.started_at)
         self.assertTrue(manifest.config_hash)  # Just verify it's non-empty

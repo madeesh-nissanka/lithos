@@ -1,6 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23274728.svg)](https://doi.org/10.5281/zenodo.23274728)
-
-# LITHOS v0.2.0
+# LITHOS v0.3.0
 
 **Literature Retrieval and Source Validation for Scoping Reviews**
 
@@ -22,11 +20,21 @@ standard library alone.
 - **Deduplication**: DOI matching, normalized-title matching, and fuzzy
   title + year + first-author matching, with a merged-cluster report.
 - **Validation**: Crossref DOI check, retraction/correction flags,
-  preprint-to-published matching, predatory-venue detection, and metadata
-  completeness scoring.
+  preprint-to-published matching, predatory-venue detection (curated Beall's List
+  snapshot), and metadata completeness scoring.
 - **Screening**: Inclusion/exclusion rule files, keyword scoring, offline
-  TF-IDF ranking, two-reviewer export with disagreement tracking, and persisted
-  screen states.
+  TF-IDF/BM25 ranking, optional local semantic embeddings, two-reviewer export
+  with disagreement tracking, Cohen's kappa agreement statistics, conflict list,
+  and per-reviewer CSV forms with round-trip import.
+- **Open-access full text**: Polite, cached fetch from Europe PMC (fullTextXML)
+  and Unpaywall OA locations; stdlib HTML/XML/PDF text extraction; screen on
+  full text via `--full-text-dir`.
+- **Offline HTML dashboard**: Single self-contained HTML file (`lithos dashboard`)
+  with embedded records, localStorage decisions, include/exclude buttons, tags,
+  reasons, and live PRISMA counts; exports CSV/JSON importable by `lithos screen`.
+- **Measured validation benchmark**: Synthetic textbook benchmark with ground-truth
+  labels; reports precision, recall, F1, and work-saved for rule screening,
+  BM25 top-k, and combined methods.
 - **Outputs**: CSV, XLSX, JSON, RIS, BibTeX, CSL-JSON; PRISMA flow diagram
   (SVG, optional PNG); evidence maps; search report (Markdown).
 - **Analytics**: Publication trends, top venues/authors, keyword
@@ -45,10 +53,11 @@ standard library alone.
 pip install lithos
 
 # Optional extras (not required by the core)
-pip install "lithos[excel]"   # XLSX via openpyxl (otherwise stdlib writer is used)
-pip install "lithos[plots]"   # PNG PRISMA diagrams via matplotlib
-pip install "lithos[docx]"    # DOCX reports via python-docx
-pip install "lithos[yaml]"    # YAML configuration files
+pip install "lithos[excel]"     # XLSX via openpyxl (otherwise stdlib writer is used)
+pip install "lithos[plots]"     # PNG PRISMA diagrams via matplotlib
+pip install "lithos[docx]"      # DOCX reports via python-docx
+pip install "lithos[yaml]"      # YAML configuration files
+pip install "lithos[semantic]"  # Local semantic embeddings via sentence-transformers
 pip install "lithos[all]"
 ```
 
@@ -66,6 +75,21 @@ lithos search --profile profile.json --out results/
 lithos dedupe --input results/records.json --out results/
 lithos screen --input results/records.json --rules my_rules.json --out results/
 
+# Two-reviewer screening with agreement stats
+lithos screen --input results/records.json --reviewers Alice Bob --export-forms --out results/
+# ... fill forms: screen_form_Alice.csv, screen_form_Bob.csv ...
+lithos screen --input results/records.json --import-decisions Alice=screen_form_Alice.csv --import-decisions Bob=screen_form_Bob.csv --agreement --out results/
+
+# Fetch open-access full texts for full-text screening
+lithos fetch-text --input results/records.json --out fulltext/
+lithos screen --input results/records.json --full-text-dir fulltext/ --rules my_rules.json --out results/
+
+# Generate offline HTML screening dashboard
+lithos dashboard --input results/records.json --out dashboard.html
+
+# Run measured validation benchmark
+lithos benchmark --out benchmark_results/
+
 # Reports
 lithos report --input results/records.json --prisma --search-report --evidence-maps --out reports/
 ```
@@ -75,7 +99,7 @@ lithos report --input results/records.json --prisma --search-report --evidence-m
 Create `lithos.yaml` and pass `--config lithos.yaml`:
 
 ```yaml
-polite_email: "reviewer@example.org"   # used in OpenAlex/Crossref polite pool
+polite_email: "<your-email>"   # used in OpenAlex/Crossref polite pool
 openalex:
   enabled: true
   rate_limit: 10
@@ -133,15 +157,18 @@ lithos.export_records(records, "records.ris", lithos.ExportFormat.RIS)
 ## CLI reference
 
 ```
-lithos search     Multi-source literature search
-lithos snowball   Citation chasing (forward/backward, --levels N)
-lithos dedupe     Deduplicate records
-lithos validate   Crossref validation
-lithos screen     Apply screening rules
-lithos export     Export to CSV/XLSX/JSON/RIS/BibTeX/CSL-JSON
-lithos report     PRISMA flow, search report, evidence maps, analytics
-lithos presets    List/emit domain search presets
-lithos config     Show configuration
+lithos search       Multi-source literature search
+lithos snowball     Citation chasing (forward/backward, --levels N)
+lithos dedupe       Deduplicate records
+lithos validate     Crossref validation
+lithos screen       Apply screening rules (rules, keywords, TF-IDF, semantic)
+lithos fetch-text   Fetch open-access full texts (Europe PMC / Unpaywall)
+lithos dashboard    Generate self-contained offline HTML screening dashboard
+lithos benchmark    Run measured validation on synthetic benchmark
+lithos export       Export to CSV/XLSX/JSON/RIS/BibTeX/CSL-JSON
+lithos report       PRISMA flow, search report, evidence maps, analytics
+lithos presets      List/emit domain search presets
+lithos config       Show configuration
 ```
 
 Global flags: `--config`, `--verbose`, `--json`, `--dry-run`, `--about`,
@@ -174,15 +201,15 @@ See [CITATION.cff](CITATION.cff).
 
 ## Status
 
-**v0.2.0** - Alpha. Core features implemented and covered by offline tests.
+**v0.3.0** - Alpha. Core features implemented and covered by offline tests.
 Live API behaviour depends on external service availability and rate limits.
 CORE requires an API key and is disabled by default.
 
 ## Known limitations
 
 - Semantic Scholar is rate limited to about 1 request/second without an API key.
-- The bundled predatory-venue list is a small illustrative example; supply a
-  curated list with `--predatory-list` for real reviews.
-- No PDF download or full-text retrieval.
-- Topic clustering is keyword-based; there are no ML embeddings in the core.
+- The bundled predatory-venue list is an archived snapshot of Beall's List (2016/2017); treat flags as prompts to verify independently.
+- PDF text extraction is best-effort with the standard library (FlateDecode text streams only); complex/scan PDFs are not covered.
+- Topic clustering is keyword-based by default; local ML embeddings are optional via `pip install "lithos[semantic]"`.
 - PNG PRISMA diagrams require matplotlib, and DOCX reports require python-docx.
+- Not a multi-user server; dual-reviewer workflow uses file round-trip with Cohen's kappa and conflict list.
