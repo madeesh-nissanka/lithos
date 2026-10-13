@@ -1,5 +1,7 @@
 # LITHOS v0.3.0
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23274728.svg)](https://doi.org/10.5281/zenodo.23274728)
+
 **Literature Retrieval and Source Validation for Scoping Reviews**
 
 LITHOS is a dependency-light, open-source command line tool and Python library
@@ -197,7 +199,9 @@ Copyright (c) 2026 Madeesh P. Nissanka. Released under the [MIT License](LICENSE
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff).
+See [CITATION.cff](CITATION.cff). The DOI
+[10.5281/zenodo.23274728](https://doi.org/10.5281/zenodo.23274728) always resolves to
+the latest archived version.
 
 ## Status
 
